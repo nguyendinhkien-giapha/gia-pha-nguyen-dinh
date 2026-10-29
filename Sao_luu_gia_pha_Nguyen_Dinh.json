@@ -1,11 +1,12 @@
 {
   "app": "Gia phả dòng họ Nguyễn Đình",
   "version": 2,
-  "exportedAt": "2026-10-28T02:11:36.193Z",
+  "exportedAt": "2026-10-29T10:49:56.479Z",
   "members": [
     {
-      "id": "csv_1793014519187_0",
       "name": "Nguyễn Đình Cung",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Kỵ",
       "branch": "Nguyễn Đình Cung",
       "birthSolar": "",
@@ -15,7 +16,12 @@
       "deathLunar": "28/06",
       "deathCanChi": "",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_0"
     },
     {
       "id": "csv_1793014519187_1",
@@ -29,7 +35,9 @@
       "deathLunar": "29/09",
       "deathCanChi": "",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_2",
@@ -43,7 +51,9 @@
       "deathLunar": "29/03",
       "deathCanChi": "",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_3",
@@ -57,7 +67,9 @@
       "deathLunar": "14/04",
       "deathCanChi": "",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_4",
@@ -71,7 +83,9 @@
       "deathLunar": "02/12/1921",
       "deathCanChi": "Tân Dậu",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_5",
@@ -85,7 +99,9 @@
       "deathLunar": "11/01/1994",
       "deathCanChi": "Giáp Tuất",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_6",
@@ -99,7 +115,9 @@
       "deathLunar": "06/06/1960",
       "deathCanChi": "Canh Tý",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_7",
@@ -113,259 +131,369 @@
       "deathLunar": "25/08/2007",
       "deathCanChi": "Đinh Hợi",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
-      "id": "csv_1793014519187_8",
       "name": "Nguyễn Đình Chính",
+      "gender": "Nam",
+      "generation": "",
       "relation": "GĐ ông",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "",
       "birthLunar": "",
       "birthCanChi": "",
-      "deathSolar": "23/03/2017",
+      "deathSolar": "2017-03-23",
       "deathLunar": "26/02/2017",
       "deathCanChi": "Đinh Dậu",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "Nghĩa trang Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "currentLocation": "",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_8"
     },
     {
-      "id": "csv_1793014519187_9",
       "name": "Trần Kim Hòa",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Chính",
-      "birthSolar": "20/05/1952",
+      "birthSolar": "1952-05-20",
       "birthLunar": "27/04/1952",
       "birthCanChi": "🐲 Nhâm Thìn",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "74 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_9"
     },
     {
-      "id": "csv_1793014519187_10",
       "name": "Nguyễn Đình Thắng",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con trai",
       "branch": "Nguyễn Đình Chính",
-      "birthSolar": "09/11/1971",
+      "birthSolar": "1971-11-09",
       "birthLunar": "22/09/1971",
       "birthCanChi": "🐷 Tân Hợi",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "54 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_10"
     },
     {
-      "id": "csv_1793014519187_11",
       "name": "Dương Phương Lan",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con dâu",
       "branch": "Nguyễn Đình Chính",
-      "birthSolar": "15/09/1975",
+      "birthSolar": "1975-09-15",
       "birthLunar": "10/08/1975",
       "birthCanChi": "🐰 Ất Mão",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "51 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_11"
     },
     {
-      "id": "csv_1793014519187_12",
       "name": "Nguyễn Quỳnh Ngọc",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Chính",
-      "birthSolar": "11/01/2005",
+      "birthSolar": "2005-01-11",
       "birthLunar": "02/12/2004",
       "birthCanChi": "🐔 Ất Dậu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "21 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_12"
     },
     {
-      "id": "csv_1793014519187_13",
       "name": "Nguyễn Kim Ngân",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con gái",
       "branch": "Nguyễn Đình Chính",
-      "birthSolar": "11/11/1974",
+      "birthSolar": "1974-11-11",
       "birthLunar": "28/09/1974",
       "birthCanChi": "🐯 Giáp Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "51 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_13"
     },
     {
-      "id": "csv_1793014519187_14",
       "name": "Nguyễn Thái Sơn",
+      "gender": "Nam",
+      "generation": "",
       "relation": "GĐ ông",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "24/10/1948",
+      "birthSolar": "1948-10-24",
       "birthLunar": "22/09/1948",
       "birthCanChi": "🐭 Mậu Tý",
-      "deathSolar": "06/01/2025",
+      "deathSolar": "2025-01-06",
       "deathLunar": "07/12/2024",
       "deathCanChi": "Giáp Thìn",
-      "age": "Hưởng thọ 75 tuổi",
-      "status": "Đã mất"
+      "age": "Hưởng thọ 76 tuổi",
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "Nghĩa trang Thôn Ao Đẫu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "notes": "",
+      "id": "csv_1793014519187_14"
     },
     {
-      "id": "csv_1793014519187_15",
       "name": "Nguyễn Thị Kim Oanh",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Vợ",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "17/08/1951",
+      "birthSolar": "1951-08-17",
       "birthLunar": "15/07/1951",
       "birthCanChi": "🐰 Tân Mão",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "75 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "Ngũ Xã, Ba Đình, Tp Hà Nội",
+      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_15"
     },
     {
-      "id": "csv_1793014519187_16",
       "name": "Nguyễn Ngọc Tùng",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con trai",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "22/12/1972",
+      "birthSolar": "1972-12-22",
       "birthLunar": "17/11/1972",
       "birthCanChi": "🐭 Nhâm Tý",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "53 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_16"
     },
     {
-      "id": "csv_1793014519187_17",
       "name": "Lê Thị Minh Nguyệt",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con dâu",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "21/06/1975",
+      "birthSolar": "1975-06-21",
       "birthLunar": "12/05/1975",
       "birthCanChi": "🐰 Ất Mão",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "51 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_17"
     },
     {
-      "id": "csv_1793014519187_18",
       "name": "Nguyễn Lê Minh",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "01/08/2002",
+      "birthSolar": "2002-08-01",
       "birthLunar": "23/06/2002",
       "birthCanChi": "🐴 Nhâm Ngọ",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "24 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Hoàng Hoa Thám, Ba Đình, Tp Hà Nội",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_18"
     },
     {
-      "id": "csv_1793014519187_19",
       "name": "Nguyễn Lê Minh Châu",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "28/10/2009",
+      "birthSolar": "2009-10-28",
       "birthLunar": "11/09/2009",
       "birthCanChi": "🐮 Kỷ Sửu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
-      "age": "16 tuổi",
-      "status": "Living"
+      "age": "17 tuổi",
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_19"
     },
     {
-      "id": "csv_1793014519187_20",
       "name": "Nguyễn Ngọc Thạch",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con trai",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "07/05/1975",
+      "birthSolar": "1975-05-07",
       "birthLunar": "27/03/1975",
       "birthCanChi": "🐰 Ất Mão",
-      "deathSolar": "10/12/2000",
+      "deathSolar": "2000-12-10",
       "deathLunar": "15/11/2000",
       "deathCanChi": "Canh Thìn",
       "age": "Hưởng thọ 25 tuổi",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "Thôn Ao Đẫu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "notes": "",
+      "id": "csv_1793014519187_20"
     },
     {
-      "id": "csv_1793014519187_21",
       "name": "Nguyễn Thị Ngọc Thủy",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con gái",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "25/03/1977",
+      "birthSolar": "1977-03-25",
       "birthLunar": "06/02/1977",
       "birthCanChi": "🐍 Đinh Tỵ",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "49 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_21"
     },
     {
-      "id": "csv_1793014519187_22",
       "name": "Chu Văn Vượng",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con rể",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "15/10/1974",
+      "birthSolar": "1974-10-15",
       "birthLunar": "01/09/1974",
       "birthCanChi": "🐯 Giáp Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "52 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_22"
     },
     {
-      "id": "csv_1793014519187_23",
       "name": "Chu Mai Ngọc",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "18/11/2005",
+      "birthSolar": "2005-11-18",
       "birthLunar": "17/10/2005",
       "birthCanChi": "🐔 Ất Dậu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "20 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_23"
     },
     {
-      "id": "csv_1793014519187_24",
       "name": "Chu Tùng Lâm",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "27/01/2007",
+      "birthSolar": "2007-01-27",
       "birthLunar": "09/12/2006",
       "birthCanChi": "🐷 Đinh Hợi",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "19 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_24"
     },
     {
-      "id": "csv_1793014519187_25",
       "name": "Chu Ngọc Thịnh",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "15/07/2013",
+      "birthSolar": "2013-07-15",
       "birthLunar": "08/06/2013",
       "birthCanChi": "🐍 Quý Tỵ",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "13 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_25"
     },
     {
       "id": "csv_1793014519187_26",
@@ -379,21 +507,29 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "45 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
-      "id": "csv_1793014519187_27",
       "name": "Đinh Thị Mùa",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con dâu",
       "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "10/01/1986",
-      "birthLunar": "01/12/1985",
-      "birthCanChi": "🐯 Bính Dần",
+      "birthSolar": "1986-02-18",
+      "birthLunar": "10/01/1986",
+      "birthCanChi": "Bính Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "40 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_27"
     },
     {
       "id": "csv_1793014519187_28",
@@ -407,7 +543,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "15 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_29",
@@ -421,357 +559,509 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "8 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
-      "id": "csv_1793014519187_30",
       "name": "Nguyễn Đình Long",
+      "gender": "Nam",
+      "generation": "",
       "relation": "GĐ ông",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "30/04/1954",
+      "birthSolar": "1954-04-30",
       "birthLunar": "28/03/1954",
       "birthCanChi": "🐴 Giáp Ngọ",
-      "deathSolar": "17/10/2026",
+      "deathSolar": "2026-10-17",
       "deathLunar": "08/09/2026",
       "deathCanChi": "Bính Ngọ",
       "age": "Hưởng thọ 72 tuổi",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "Nghĩa trang Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "notes": "",
+      "id": "csv_1793014519187_30"
     },
     {
-      "id": "csv_1793014519187_31",
       "name": "Nguyễn Thị Lâm",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "05/02/1959",
+      "birthSolar": "1959-02-05",
       "birthLunar": "28/12/1958",
       "birthCanChi": "🐷 Kỷ Hợi",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "67 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_31"
     },
     {
-      "id": "csv_1793014519187_32",
       "name": "Nguyễn Đình Lân",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con trai",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "03/07/1982",
+      "birthSolar": "1982-07-03",
       "birthLunar": "13/05/1982",
       "birthCanChi": "🐶 Nhâm Tuất",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "44 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_32"
     },
     {
-      "id": "csv_1793014519187_33",
       "name": "Lương Thị Dung",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con dâu",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "16/06/1985",
+      "birthSolar": "1985-06-16",
       "birthLunar": "28/04/1985",
       "birthCanChi": "🐮 Ất Sửu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "41 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_33"
     },
     {
-      "id": "csv_1793014519187_34",
       "name": "Nguyễn Bảo Trân",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "17/07/2011",
+      "birthSolar": "2011-07-17",
       "birthLunar": "17/06/2011",
       "birthCanChi": "🐰 Tân Mão",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "15 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_34"
     },
     {
-      "id": "csv_1793014519187_35",
       "name": "Nguyễn Đình Thiên Vũ",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "24/01/2020",
+      "birthSolar": "2020-01-24",
       "birthLunar": "30/12/2019",
       "birthCanChi": "🐭 Canh Tý",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "6 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_35"
     },
     {
-      "id": "csv_1793014519187_36",
       "name": "Nguyễn Đình Bảo Ngọc",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "01/02/2023",
+      "birthSolar": "2023-02-01",
       "birthLunar": "11/01/2023",
       "birthCanChi": "🐰 Quý Mão",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "3 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_36"
     },
     {
-      "id": "csv_1793014519187_37",
       "name": "Nguyễn Thị Bích Liên",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con gái",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "03/07/1986",
+      "birthSolar": "1986-07-03",
       "birthLunar": "27/05/1986",
       "birthCanChi": "🐯 Bính Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "40 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_37"
     },
     {
-      "id": "csv_1793014519187_38",
       "name": "Nguyễn Nam Hiếu",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con rể",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "08/12/1981",
+      "birthSolar": "1981-12-08",
       "birthLunar": "13/11/1981",
       "birthCanChi": "🐔 Tân Dậu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "44 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_38"
     },
     {
-      "id": "csv_1793014519187_39",
       "name": "Nguyễn Ngọc Hân",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "12/11/2010",
+      "birthSolar": "2010-11-12",
       "birthLunar": "07/10/2010",
       "birthCanChi": "🐯 Canh Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "15 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_39"
     },
     {
-      "id": "csv_1793014519187_40",
       "name": "Nguyễn Thái Hòa",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Long",
-      "birthSolar": "27/12/2018",
+      "birthSolar": "2018-12-27",
       "birthLunar": "21/11/2018",
       "birthCanChi": "🐶 Mậu Tuất",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "7 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_40"
     },
     {
-      "id": "csv_1793014519187_41",
       "name": "Nguyễn Đình Hợp",
+      "gender": "Nam",
+      "generation": "",
       "relation": "GĐ ông",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "10/10/1956",
+      "birthSolar": "1956-10-10",
       "birthLunar": "07/09/1956",
       "birthCanChi": "🐵 Bính Thân",
-      "deathSolar": "28/12/2007",
+      "deathSolar": "2007-12-28",
       "deathLunar": "19/11/2007",
       "deathCanChi": "Đinh Hợi",
       "age": "Hưởng thọ 51 tuổi",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "Nghĩa trang Ao Đẫu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "notes": "",
+      "id": "csv_1793014519187_41"
     },
     {
-      "id": "csv_1793014519187_42",
       "name": "Nguyễn Thị Sang",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "20/10/1952",
+      "birthSolar": "1952-10-20",
       "birthLunar": "02/09/1952",
       "birthCanChi": "🐲 Nhâm Thìn",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "74 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_42"
     },
     {
-      "id": "csv_1793014519187_43",
       "name": "Nguyễn Đình Kiên",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con trai",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "12/05/1980",
+      "birthSolar": "1980-05-12",
       "birthLunar": "28/03/1980",
       "birthCanChi": "🐵 Canh Thân",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "46 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "Ngũ Xã, Ba Đình, Tp Hà Nội",
+      "currentLocation": "Số 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_43"
     },
     {
-      "id": "csv_1793014519187_44",
       "name": "Đoàn Thị Hường",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con dâu",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "29/10/1986",
+      "birthSolar": "1986-10-29",
       "birthLunar": "26/09/1986",
       "birthCanChi": "🐯 Bính Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
-      "age": "39 tuổi",
-      "status": "Living"
+      "age": "40 tuổi",
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_44"
     },
     {
-      "id": "csv_1793014519187_45",
       "name": "Nguyễn Khôi Nguyên",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "19/08/2009",
+      "birthSolar": "2009-08-19",
       "birthLunar": "29/06/2009",
       "birthCanChi": "🐮 Kỷ Sửu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "17 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_45"
     },
     {
-      "id": "csv_1793014519187_46",
       "name": "Nguyễn Thị Thùy Chi",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con gái",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "18/02/1986",
+      "birthSolar": "1986-02-18",
       "birthLunar": "10/01/1986",
       "birthCanChi": "🐯 Bính Dần",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "40 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_46"
     },
     {
-      "id": "csv_1793014519187_47",
       "name": "Chu Văn Nhật",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con rể",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "05/10/1985",
+      "birthSolar": "1985-10-05",
       "birthLunar": "21/08/1985",
       "birthCanChi": "🐮 Ất Sửu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "41 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_47"
     },
     {
-      "id": "csv_1793014519187_48",
       "name": "Chu Đức Trọng",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "24/04/2015",
+      "birthSolar": "2015-04-24",
       "birthLunar": "06/03/2015",
       "birthCanChi": "🐑 Ất Mùi",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "11 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_48"
     },
     {
-      "id": "csv_1793014519187_49",
       "name": "Chu Ngọc Bích",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "24/08/2017",
+      "birthSolar": "2017-08-24",
       "birthLunar": "03/07/2017",
       "birthCanChi": "🐔 Đinh Dậu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "9 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_49"
     },
     {
-      "id": "csv_1793014519187_50",
       "name": "Nguyễn Thị Thùy Linh",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Con gái",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "16/08/1988",
+      "birthSolar": "1988-08-16",
       "birthLunar": "05/07/1988",
       "birthCanChi": "🐲 Mậu Thìn",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "38 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_50"
     },
     {
-      "id": "csv_1793014519187_51",
       "name": "Bùi Đỗ Trường",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Con rể",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "27/09/1987",
+      "birthSolar": "1987-09-27",
       "birthLunar": "05/08/1987",
       "birthCanChi": "🐰 Đinh Mão",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "39 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_51"
     },
     {
-      "id": "csv_1793014519187_52",
       "name": "Bùi Tường An",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "28/06/2013",
+      "birthSolar": "2013-06-28",
       "birthLunar": "21/05/2013",
       "birthCanChi": "🐍 Quý Tỵ",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "13 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_52"
     },
     {
-      "id": "csv_1793014519187_53",
       "name": "Bùi Đỗ Quang Anh",
+      "gender": "Nam",
+      "generation": "",
       "relation": "Cháu trai",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "17/04/2021",
+      "birthSolar": "2021-04-17",
       "birthLunar": "06/03/2021",
       "birthCanChi": "🐮 Tân Sửu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "5 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_53"
     },
     {
-      "id": "csv_1793014519187_54",
       "name": "Bùi Ngọc Châu Anh",
+      "gender": "Nữ",
+      "generation": "",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Hợp",
-      "birthSolar": "17/04/2021",
+      "birthSolar": "2021-04-17",
       "birthLunar": "06/03/2021",
       "birthCanChi": "🐮 Tân Sửu",
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
       "age": "5 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793014519187_54"
     },
     {
       "id": "csv_1793014519187_55",
@@ -785,7 +1075,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "66 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_56",
@@ -799,7 +1091,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "64 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_57",
@@ -813,7 +1107,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "41 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_58",
@@ -827,7 +1123,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "40 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_59",
@@ -841,7 +1139,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "17 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_60",
@@ -855,7 +1155,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "13 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_61",
@@ -869,7 +1171,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "38 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_62",
@@ -883,7 +1187,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "40 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_63",
@@ -897,7 +1203,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "15 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_64",
@@ -911,7 +1219,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "9 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_65",
@@ -925,7 +1235,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "7 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_66",
@@ -939,7 +1251,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "4 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_67",
@@ -953,7 +1267,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "69 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_68",
@@ -967,7 +1283,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "67 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_69",
@@ -981,7 +1299,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "42 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_70",
@@ -995,7 +1315,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "47 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_71",
@@ -1009,7 +1331,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "11 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_72",
@@ -1023,7 +1347,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "5 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_73",
@@ -1037,7 +1363,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "39 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_74",
@@ -1051,7 +1379,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "32 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_75",
@@ -1065,7 +1395,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "10 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_76",
@@ -1079,7 +1411,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "2 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_77",
@@ -1093,7 +1427,9 @@
       "deathLunar": "23/07/2010",
       "deathCanChi": "Canh Dần",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_78",
@@ -1107,7 +1443,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "63 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_79",
@@ -1121,7 +1459,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "41 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_80",
@@ -1135,7 +1475,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "42 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_81",
@@ -1149,7 +1491,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "21 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_82",
@@ -1163,7 +1507,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "19 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_83",
@@ -1177,7 +1523,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "2 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_84",
@@ -1191,7 +1539,9 @@
       "deathLunar": "22/02/1996",
       "deathCanChi": "Bính Tý",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_85",
@@ -1205,7 +1555,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "29 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_86",
@@ -1219,7 +1571,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "32 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_87",
@@ -1233,7 +1587,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "8 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_88",
@@ -1247,7 +1603,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "7 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_89",
@@ -1261,7 +1619,9 @@
       "deathLunar": "28/04/2022",
       "deathCanChi": "Nhâm Dần",
       "age": "",
-      "status": "Đã mất"
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_90",
@@ -1275,7 +1635,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "62 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_91",
@@ -1289,7 +1651,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "36 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_92",
@@ -1303,7 +1667,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "35 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_93",
@@ -1317,7 +1683,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "11 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_94",
@@ -1331,7 +1699,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "3 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_95",
@@ -1345,7 +1715,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "34 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_96",
@@ -1359,7 +1731,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "31 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_97",
@@ -1373,7 +1747,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "10 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_98",
@@ -1387,7 +1763,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "5 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_99",
@@ -1401,7 +1779,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "59 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_100",
@@ -1415,7 +1795,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "55 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_101",
@@ -1429,7 +1811,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "33 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_102",
@@ -1443,7 +1827,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "34 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_103",
@@ -1457,7 +1843,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "12 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_104",
@@ -1471,7 +1859,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "10 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_105",
@@ -1485,7 +1875,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "31 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_106",
@@ -1499,7 +1891,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "31 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_107",
@@ -1513,7 +1907,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "9 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_108",
@@ -1527,7 +1923,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "4 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_109",
@@ -1541,7 +1939,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "55 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_110",
@@ -1555,7 +1955,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "44 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_111",
@@ -1569,7 +1971,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "3 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_112",
@@ -1583,7 +1987,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "18 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_113",
@@ -1597,7 +2003,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "53 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_114",
@@ -1611,7 +2019,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "47 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_115",
@@ -1625,7 +2035,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "29 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_116",
@@ -1639,7 +2051,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "27 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_117",
@@ -1653,7 +2067,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "7 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_118",
@@ -1667,7 +2083,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "12 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_119",
@@ -1681,7 +2099,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "9 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_120",
@@ -1695,7 +2115,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "50 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_121",
@@ -1709,7 +2131,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "47 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_122",
@@ -1723,7 +2147,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "23 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_123",
@@ -1737,7 +2163,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "12 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_124",
@@ -1751,7 +2179,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "44 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_125",
@@ -1765,7 +2195,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "43 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_126",
@@ -1779,7 +2211,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "17 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_127",
@@ -1793,7 +2227,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "14 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "id": "csv_1793014519187_128",
@@ -1807,7 +2243,9 @@
       "deathLunar": "",
       "deathCanChi": "",
       "age": "6 tuổi",
-      "status": "Living"
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": ""
     },
     {
       "name": "Nguyễn Anh Anh",
