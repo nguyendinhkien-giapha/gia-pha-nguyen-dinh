@@ -191,41 +191,7 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
   .feature-panel { padding:10px!important; }
 }
 </style>
-<style id="map-merged-cells-style">.map-location-table .map-person-cell,.map-location-table .map-branch-cell{text-align:left!important;vertical-align:middle;white-space:normal;font-weight:600;padding-left:10px!important}.map-location-table td{vertical-align:middle}</style>
-<style id="mobile-display-repair">
-@media (max-width: 768px) {
-  html, body { width:100%; min-width:0!important; overflow-x:hidden!important; }
-  .hero { height:105px!important; background-position:center!important; }
-  #nav {
-    position:fixed!important; left:0!important; right:0!important; bottom:0!important; top:auto!important;
-    z-index:9999!important; display:flex!important; flex-wrap:nowrap!important;
-    gap:4px!important; overflow-x:auto!important; overflow-y:hidden!important;
-    width:100%!important; max-width:100vw!important; padding:7px 6px calc(7px + env(safe-area-inset-bottom))!important;
-    margin:0!important; background:#fffaf1!important; border-top:1px solid #d8b56b!important;
-    box-shadow:0 -3px 14px rgba(70,35,10,.12)!important;
-    -webkit-overflow-scrolling:touch;
-  }
-  #nav button { flex:0 0 auto!important; min-width:70px!important; max-width:140px!important; white-space:nowrap!important; }
-  main { width:100%!important; max-width:100%!important; margin:0!important; padding:8px 8px calc(100px + env(safe-area-inset-bottom))!important; }
-  .layout { display:block!important; width:100%!important; }
-  .side { width:100%!important; max-width:100%!important; }
-  .toolbar { display:flex!important; flex-wrap:wrap!important; gap:6px!important; }
-  .toolbar button { max-width:100%!important; }
-  .panel { width:100%!important; max-width:100%!important; overflow-x:auto!important; }
-  .stats, .stat-grid { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:8px!important; }
-  #statsCards { display:grid!important; visibility:visible!important; }
-  .stat { min-width:0!important; }
-  table { min-width:600px; }
-  .footer, .copyright-screen { overflow-wrap:anywhere!important; }
-}
-@media (max-width: 420px) {
-  .hero { height:75px!important; }
-  #nav button { font-size:11px!important; padding:8px 7px!important; }
-  main { padding-left:6px!important; padding-right:6px!important; }
-  .stats, .stat-grid { grid-template-columns:repeat(2,minmax(0,1fr))!important; }
-}
-</style>
-</head><body>
+<style id="map-merged-cells-style">.map-location-table .map-person-cell,.map-location-table .map-branch-cell{text-align:left!important;vertical-align:middle;white-space:normal;font-weight:600;padding-left:10px!important}.map-location-table td{vertical-align:middle}</style></head><body>
 <header class="hero"></header>
 <nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button><button data-view="members">⌂ Thành viên</button><button data-view="calendar">▦ Lịch sự kiện</button><button data-view="map">⌖ Bản đồ quê quán</button><button data-view="anomalies">⚠ Kiểm tra dữ liệu</button><button data-view="cemetery">🪦 Sổ mộ phần</button><button data-view="portal">✓ Công việc dòng họ</button><button data-view="backup">▣ Sao lưu / Khôi phục</button><button data-view="guide">🎉 Sự kiện gia đình</button></nav>
 <main>
@@ -623,6 +589,4 @@ document.getElementById('feClearFilters')?.addEventListener('click',()=>{documen
 
 // Mở phần mềm mặc định tại Trang chủ, không làm thay đổi dữ liệu đã lưu.
 showView("stats");
-// Bảo đảm trang chủ thống kê luôn hiển thị khi mở lần đầu, kể cả trình duyệt mobile.
-const homeStats=document.getElementById("statsCards"); if(homeStats) homeStats.hidden=false;
 </script></body></html>
