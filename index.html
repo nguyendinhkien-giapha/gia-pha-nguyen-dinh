@@ -291,6 +291,21 @@ try{tasks=JSON.parse(localStorage.getItem(TASK_KEY)||'[]')}catch(e){tasks=[]}
 function saveCemeteries(){localStorage.setItem(CEM_KEY,JSON.stringify(cemeteries));renderCemeteries()}
 function saveTasks(){localStorage.setItem(TASK_KEY,JSON.stringify(tasks));renderTasks()}
 try{members=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){members=[]}
+// Khôi phục các trường địa điểm từ bản dữ liệu đóng gói nếu thiết bị đang giữ
+// một bản localStorage cũ chưa có quê quán/nơi sinh sống. Chỉ bổ sung khi
+// toàn bộ danh sách hiện tại chưa có địa điểm, không ghi đè dữ liệu người dùng.
+try{
+ const embeddedMembers=Array.isArray(EMBEDDED_BACKUP.members)?EMBEDDED_BACKUP.members:[];
+ const hasAnyLocation=members.some(m=>String(m?.hometown||'').trim()||String(m?.currentLocation||'').trim());
+ if(!hasAnyLocation&&members.length&&embeddedMembers.length){
+   const byId=new Map(embeddedMembers.map(m=>[String(m.id||''),m]));
+   members=members.map(m=>{
+     const source=byId.get(String(m.id||''))||embeddedMembers.find(x=>String(x.name||'').trim()===String(m.name||'').trim()&&String(x.branch||'')===String(m.branch||''))||{};
+     return {...m,hometown:String(source.hometown??m.hometown??''),currentLocation:String(source.currentLocation??m.currentLocation??'')};
+   });
+   localStorage.setItem(KEY,JSON.stringify(members));
+ }
+}catch(e){console.warn('Không thể bổ sung địa điểm từ dữ liệu đóng gói:',e)}
 function normalizeMember(m){return {...m,hometown:String(m?.hometown??''),currentLocation:String(m?.currentLocation??'')}}
 function save(){members=members.map(normalizeMember);localStorage.setItem(KEY,JSON.stringify(members));render()}
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
