@@ -1,6 +1,0 @@
-GIA PHA NGUYEN DINH - BAN DU LIEU DAY DU DE DANG WEB
-1. index.html da duoc cap nhat du lieu tu file JSON sao luu.
-2. Du lieu thanh vien, so mo phan, cong viec dong ho duoc nhung vao trang web.
-3. De cap nhat Netlify: giai nen ZIP, keo thu muc chua index.html (hoac cac file trong thu muc) vao Netlify Deploys.
-4. Mo link website tren iPhone. Neu da tung xem phien ban cu, dong tab va mo lai.
-5. Du lieu tren may tinh va dien thoai khong tu dong dong bo cac thay doi sau nay. Muon cap nhat du lieu moi, can sao luu JSON va tao ban web moi.
