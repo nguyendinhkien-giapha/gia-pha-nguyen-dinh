@@ -585,6 +585,23 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 }
 </style>
 
+
+<style id="hide-mobile-sort-toggle-center-copyright">
+@media (max-width: 768px) {
+  /* Hide the sort-actions toggle on phones; keep member rows and data unchanged. */
+  #toggleMemberActions { display: none !important; }
+}
+.copyright-screen {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 12px auto !important;
+  padding: 10px 12px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+</style>
+
 </head><body>
 <header class="hero"></header>
 <nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button><button data-view="members">⌂ Thành viên</button><button data-view="calendar">▦ Lịch sự kiện</button><button data-view="map">⌖ Bản đồ quê quán</button><button data-view="anomalies">⚠ Kiểm tra dữ liệu</button><button data-view="cemetery">🪦 Sổ mộ phần</button><button data-view="portal">✓ Công việc dòng họ</button><button data-view="backup">▣ Sao lưu / Khôi phục</button><button data-view="guide">🎉 Sự kiện gia đình</button></nav>
