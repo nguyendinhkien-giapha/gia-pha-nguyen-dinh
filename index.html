@@ -21,7 +21,20 @@ nav{display:flex;gap:4px;overflow:auto;background:linear-gradient(#941e0e,#650e0
 nav button{border:0;background:transparent;color:#ffebbd;padding:11px 14px;border-radius:5px;font-weight:700;cursor:pointer}nav button.active,nav button:hover{background:#b84924;color:white}
 main{padding:14px;max-width:1800px;margin:auto}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}.btn{border:0;border-radius:7px;padding:10px 13px;font-weight:700;color:#fff;cursor:pointer;background:#8a2012}.btn.green,.btn.red,.btn.gold,.btn.teal,.btn.gray{background:#8a2012}.btn:hover{filter:brightness(1.06)}input,select,textarea{font:inherit;border:1px solid #d9c8a5;border-radius:6px;background:white;padding:9px;color:#33271d;min-width:0}input:focus,select:focus,textarea:focus{outline:2px solid #dfbd70}.search{flex:1;min-width:200px}
 .layout{display:grid;grid-template-columns:155px minmax(0,1fr);gap:8px}.panel{background:#fffaf0;border:1px solid var(--line);border-radius:9px;overflow:hidden;box-shadow:0 2px 7px #5b2c0b0b;margin-bottom:12px}.panel h3{margin:0;padding:11px 13px;background:linear-gradient(90deg,#7b170b,#a72b13);color:#ffebc2;font-size:15px}.side-inner{padding:9px}.filter{display:grid;gap:7px}.filter label{display:grid;gap:3px;font-size:11px;color:#6c5540}.filter select,.filter input{padding:7px;font-size:12px}.panel h3{padding:9px 11px;font-size:14px}.stats{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:9px;margin-top:12px}.stat{background:#fffaf0;border:1px solid var(--line);border-radius:9px;padding:13px;display:flex;gap:10px;align-items:center}.stat .ico{font-size:25px;background:#f8e9c9;border-radius:50%;padding:10px}.stat b{display:block;font-size:23px;color:#8a2b11}.stat small{color:#695541}
-.table-wrap{overflow:auto;height:78vh;max-height:78vh;min-height:520px;background:white}table{border-collapse:collapse;width:100%;min-width:1040px;font-size:11px;line-height:1.15}th,td{padding:5px 6px;border:1px solid #e9dfcc;text-align:center;white-space:nowrap}th{padding:6px 5px}th{background:#f1e4c9;color:#5a321c;position:sticky;top:0;z-index:2}.group-head th{top:0;z-index:3}.sub-head th{top:31px;z-index:2}.birth-group{text-align:center;background:#f1e4c9!important;color:#5a321c;font-family:Arial,"Segoe UI",sans-serif;font-size:15px}td.name{text-align:left;font-weight:500}tbody tr:nth-child(even){background:#fffaf2}tbody tr:hover{background:#fff0ce}.status{font-weight:700}.alive{color:#148344}.dead{color:#b21d16}.actions button{border:0;background:transparent;cursor:pointer;font-size:16px;padding:3px}.footer{margin-top:12px;background:linear-gradient(#7d170b,#5a0c04);color:#ffdf9a;padding:14px;text-align:center;border-top:3px solid #c8a052;font-family:Arial,"Segoe UI",sans-serif;font-style:normal}
+.table-wrap{overflow:auto;height:78vh;max-height:78vh;min-height:520px;background:white}table{border-collapse:collapse;width:100%;min-width:1040px;font-size:11px;line-height:1.15}th,td{padding:5px 6px;border:1px solid #e9dfcc;text-align:center;white-space:nowrap}th{padding:6px 5px}th{background:#f1e4c9;color:#5a321c;position:sticky;top:0;z-index:2}.group-head th{top:0;z-index:3}.sub-head th{top:31px;z-index:2}.birth-group{text-align:center;background:#f1e4c9!important;color:#5a321c;font-family:Arial,"Segoe UI",sans-serif;font-size:15px}td.name{text-align:left;font-weight:500}tbody tr:nth-child(even){background:#fffaf2}tbody tr:hover{background:#fff0ce}.status{font-weight:700}.alive{color:#148344}.dead{color:#b21d16}.actions button{border:0;background:transparent;cursor:pointer;font-size:16px;padding:3px}
+/* Chế độ thao tác thứ tự thành viên: mặc định ẩn, chỉ hiện khi người dùng bật */
+body.member-actions-hidden .member-order-actions{display:none!important}
+.member-order-actions{display:inline-flex;align-items:center;justify-content:center;gap:3px;white-space:nowrap}
+.member-order-actions button{min-width:30px;min-height:30px;border:1px solid #dfc99f!important;border-radius:7px!important;background:#fff8e9!important;color:#71301b;font-size:17px!important;padding:2px 5px!important;touch-action:manipulation}
+.member-order-actions button:disabled{opacity:.3;cursor:not-allowed}
+#toggleMemberActions{white-space:nowrap}
+@media(max-width:600px){
+  #toggleMemberActions{width:100%;min-height:42px;font-size:14px}
+  .member-order-actions{gap:4px}
+  .member-order-actions button{min-width:36px;min-height:36px;font-size:18px!important}
+  td.actions{min-width:150px}
+}
+.footer{margin-top:12px;background:linear-gradient(#7d170b,#5a0c04);color:#ffdf9a;padding:14px;text-align:center;border-top:3px solid #c8a052;font-family:Arial,"Segoe UI",sans-serif;font-style:normal}
 dialog{border:1px solid #c6a25c;border-radius:12px;padding:0;width:min(680px,94vw);max-height:90vh;box-shadow:0 20px 70px #0005}dialog::backdrop{background:#180a06a8}.modal-head{background:#7b170b;color:#ffebc2;padding:14px 18px;font-weight:800;font-size:18px}.modal-body{padding:16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;overflow:auto}.field{display:grid;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#71553c;font-weight:700}.modal-foot{display:flex;justify-content:flex-end;gap:8px;padding:12px 16px;border-top:1px solid var(--line)}
 .notice{font-size:12px;color:#705c45;margin:7px 0}.empty{text-align:center;padding:30px;color:#826b52}
 @media(max-width:900px){.layout{grid-template-columns:145px minmax(0,1fr);gap:7px}.hero{height:clamp(180px,20vw,240px)}.couplet{height:110px;top:8px;padding:6px 5px}.left{left:2%}.right{right:2%}.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding:9px}.table-wrap{height:70vh;min-height:420px;max-height:75vh}}
@@ -377,14 +390,208 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 @media(min-width:769px){.mobile-filter-toggle{display:none!important}}
 @media(max-width:768px){.mobile-filter-toggle{display:inline-flex!important;align-items:center;justify-content:center;width:100%;margin:0 0 8px!important}}
 [hidden]{display:none!important}
+
+/* Desktop: keep all member toolbar actions, including PDF export, on one row.
+   Search moves to its own full-width row; mobile keeps the compact responsive layout. */
+@media (min-width: 769px) {
+  .toolbar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+  .toolbar > button:not(.mobile-manage-toggle) {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    min-width: 0 !important;
+    font-size: 11px !important;
+    padding: 8px 9px !important;
+  }
+  .toolbar #search {
+    order: 100 !important;
+    flex: 1 0 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+@media (max-width: 768px) {
+  .toolbar #search {
+    flex: 1 0 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
 </style>
+
+<style id="compact-mobile-member-filter">
+/* Mobile: remove the duplicated section heading; the toggle is the single filter header. */
+@media (max-width: 768px) {
+  .layout > .side > .panel > h3 {
+    display: none !important;
+  }
+  .layout > .side > .panel {
+    padding: 8px !important;
+    margin: 0 0 10px !important;
+    border-radius: 11px !important;
+    box-shadow: 0 1px 4px rgba(75, 35, 12, .08) !important;
+  }
+  #mobileMemberFilterBtn.mobile-filter-toggle {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    margin: 0 !important;
+    padding: 10px 14px !important;
+    border-radius: 9px !important;
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    box-sizing: border-box !important;
+  }
+  #memberFilterControls:not([hidden]) {
+    margin-top: 9px !important;
+    padding: 10px !important;
+    border: 1px solid #ead9b9 !important;
+    border-radius: 8px !important;
+    background: #fffaf0 !important;
+  }
+  #memberFilterControls label {
+    margin: 0 0 9px !important;
+  }
+  #memberFilterControls select {
+    min-height: 40px !important;
+  }
+}
+</style>
+
+
+<style id="toolbar-one-row-desktop-responsive-mobile">
+/* Desktop: all management buttons stay on one line; search sits on the next line. */
+@media (min-width: 769px) {
+  .toolbar {
+    display: grid !important;
+    grid-template-columns: repeat(9, max-content) !important;
+    grid-auto-flow: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    padding-bottom: 2px !important;
+    box-sizing: border-box !important;
+  }
+  .toolbar > button:not(.mobile-manage-toggle) {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    min-width: max-content !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+    padding: 10px 12px !important;
+  }
+  .toolbar #mobileDataManageBtn { display: none !important; }
+  .toolbar #search {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+  }
+}
+/* Phone/tablet: retain the single "Quản lý dữ liệu" toggle and wrap actions neatly when opened. */
+@media (max-width: 768px) {
+  .toolbar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+    gap: 7px !important;
+    overflow: visible !important;
+  }
+  .toolbar .mobile-manage-toggle {
+    display: inline-flex !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    margin: 0 !important;
+    order: 0 !important;
+  }
+  .toolbar .btn[data-mobile-management="true"] {
+    flex: 1 1 calc(50% - 7px) !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    min-height: 42px !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .toolbar.mobile-management-open .btn[data-mobile-management="true"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .toolbar #search {
+    order: 100 !important;
+    flex: 1 0 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+@media (max-width: 380px) {
+  .toolbar .btn[data-mobile-management="true"] {
+    flex-basis: 100% !important;
+  }
+}
+</style>
+
+
+<style id="toolbar-ten-actions-single-row">
+@media (min-width: 769px) {
+  .toolbar {
+    display: grid !important;
+    grid-template-columns: repeat(10, max-content) !important;
+    grid-auto-flow: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    column-gap: 6px !important;
+    row-gap: 8px !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    box-sizing: border-box !important;
+  }
+  .toolbar > button:not(.mobile-manage-toggle):not([hidden]) {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    min-width: max-content !important;
+    margin: 0 !important;
+    padding: 9px 10px !important;
+    font-size: 12px !important;
+    box-sizing: border-box !important;
+  }
+  .toolbar > button[hidden] { display: none !important; }
+  .toolbar #search {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+</style>
+
 </head><body>
 <header class="hero"></header>
 <nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button><button data-view="members">⌂ Thành viên</button><button data-view="calendar">▦ Lịch sự kiện</button><button data-view="map">⌖ Bản đồ quê quán</button><button data-view="anomalies">⚠ Kiểm tra dữ liệu</button><button data-view="cemetery">🪦 Sổ mộ phần</button><button data-view="portal">✓ Công việc dòng họ</button><button data-view="backup">▣ Sao lưu / Khôi phục</button><button data-view="guide">🎉 Sự kiện gia đình</button></nav>
 <main>
 <div class="toolbar">
 <button class="btn mobile-manage-toggle" id="mobileDataManageBtn" type="button" aria-expanded="false">⚙️ Quản lý dữ liệu</button>
-<button class="btn" id="addBtn">＋ Thêm thành viên</button><button class="btn green" id="editBtn">✎ Sửa đã chọn</button><button class="btn red" id="deleteBtn">✕ Xóa hàng loạt</button><button class="btn gold" id="csvBtn">⇩ Xuất CSV (đang hiển thị)</button><button class="btn teal" id="importBtn">⇧ Nhập CSV</button><button class="btn gray" id="jsonBtn">▣ Sao lưu JSON</button><button class="btn gold" id="restoreBtn">↻ Khôi phục JSON</button><button class="btn teal" id="printBranchBtn" hidden>🖨 In đại gia đình</button><button class="btn gold" id="exportBookBtn">📖 Xuất sổ gia phả PDF</button>
+<button class="btn gray" id="toggleMemberActions" type="button" aria-expanded="false">⚙️ Hiện nút sắp xếp</button><button class="btn" id="addBtn">＋ Thêm thành viên</button><button class="btn green" id="editBtn">✎ Sửa đã chọn</button><button class="btn red" id="deleteBtn">✕ Xóa hàng loạt</button><button class="btn gold" id="csvBtn">⇩ Xuất CSV (đang hiển thị)</button><button class="btn teal" id="importBtn">⇧ Nhập CSV</button><button class="btn gray" id="jsonBtn">▣ Sao lưu JSON</button><button class="btn gold" id="restoreBtn">↻ Khôi phục JSON</button><button class="btn teal" id="printBranchBtn" hidden>🖨 In đại gia đình</button><button class="btn gold" id="exportBookBtn">📖 Xuất sổ gia phả PDF</button>
 <input class="search" id="search" placeholder="⌕ Tìm theo họ tên, quan hệ, chi nhánh...">
 <input type="file" id="fileInput" accept=".json,.csv,text/csv,application/json" hidden>
 </div>
@@ -489,7 +696,7 @@ try {
 <script>
 const KEY='nguyen_dinh_genealogy_v1';
 const fields=[['name','Họ và tên','text',true],['gender','Giới tính','select',true],['generation','Đời thứ','text'],['relation','Mối quan hệ','text'],['branch','Thuộc về / Chi nhánh','text'],['birthSolar','Ngày sinh dương lịch','date'],['birthLunar','Ngày sinh âm lịch','text'],['birthCanChi','Can chi năm sinh','text'],['deathSolar','Ngày mất dương lịch','date'],['deathLunar','Ngày mất âm lịch','text'],['deathCanChi','Can chi năm mất','text'],['age','Tuổi / Hưởng thọ','text'],['status','Trạng thái','select'],['hometown','Quê quán','text'],['currentLocation','Nơi sinh sống','text'],['burialPlace','Nơi an táng / địa chỉ mộ','text'],['notes','Ghi chú','textarea']];
-let members=[],selected=new Set(),page=1,editId=null;
+let members=[],selected=new Set(),page=1,editId=null,pendingInsertIndex=null;
 const CEM_KEY='nguyen_dinh_cemetery_v1',TASK_KEY='nguyen_dinh_tasks_v1';
 let cemeteries=[],tasks=[],lastAudit=[];
 try{cemeteries=JSON.parse(localStorage.getItem(CEM_KEY)||'[]')}catch(e){cemeteries=[]}
@@ -523,7 +730,26 @@ function birthMonth(v){const d=parseSolarDate(v);return d?d.getMonth()+1:''}
 function birthWeekday(v){const d=parseSolarDate(v);return d?['Chủ nhật','Thứ hai','Thứ ba','Thứ tư','Thứ năm','Thứ sáu','Thứ bảy'][d.getDay()]:''}
 function formatSolar(v){const d=parseSolarDate(v);return d?String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear():v||''}
 function yearOnly(v){if(!v)return '';const s=String(v).trim();let m=s.match(/^(\d{4})[-/.]/);if(m)return m[1];m=s.match(/(?:^|\D)(\d{4})(?:\D|$)/g);if(m&&m.length){const last=m[m.length-1].match(/(\d{4})/);if(last)return last[1]}return s}
-function render(){let data=filtered(),size=+document.getElementById('pageSize').value||10,max=Math.max(1,Math.ceil(data.length/size));if(page>max)page=max;let start=(page-1)*size,view=data.slice(start,start+size);document.getElementById('rows').innerHTML=view.map((m,i)=>`<tr><td><input type="checkbox" aria-label="Chọn ${esc(m.name)}" ${selected.has(m.id)?'checked':''} onchange="toggle('${m.id}',this.checked)"></td><td>${start+i+1}</td><td class="name">${esc(m.name)}</td><td>${esc(m.relation)}</td><td>${esc(m.branch)}</td><td>${esc(birthMonth(m.birthSolar))}</td><td>${esc(birthWeekday(m.birthSolar))}</td><td>${esc(formatSolar(m.birthSolar))}</td><td>${esc(m.birthLunar)}</td><td>${esc(m.birthCanChi)}</td><td>${esc(formatSolar(m.deathSolar))}</td><td>${esc(formatSolar(m.deathLunar))}</td><td>${esc(deathCanChi(m))}</td><td>${esc(calcAgeText(m)||m.age)}</td><td class="status ${calcStatus(m)==='Đã mất'?'dead':'alive'}">${calcStatus(m)==='Đã mất'?'🔴':'🟢'} ${calcStatus(m)}</td><td class="actions"><button title="Sửa" onclick="editMember('${m.id}')">✏️</button><button title="Xóa" onclick="deleteOne('${m.id}')">🗑️</button></td></tr>`).join('');document.getElementById('empty').hidden=!!view.length;document.getElementById('count').textContent=`${data.length} / ${members.length} thành viên`;document.getElementById('pageInfo').textContent=`Hiển thị ${data.length?start+1:0}–${Math.min(start+size,data.length)} / ${data.length}`;document.getElementById('prev').disabled=page<=1;document.getElementById('next').disabled=page>=max;document.getElementById('total').textContent=members.length;document.getElementById('alive').textContent=members.filter(m=>calcStatus(m)==='Living').length;const elderlyCount=members.filter(m=>calcStatus(m)==='Living'&&memberAge(m)!==null&&memberAge(m)>=60).length;document.getElementById('elderly').textContent=elderlyCount;document.getElementById('dead').textContent=members.filter(m=>calcStatus(m)==='Đã mất').length;document.getElementById('anniv').textContent=members.filter(m=>m.deathLunar).length;document.getElementById('birth').textContent=members.filter(m=>m.birthSolar||m.birthLunar).length;syncSelectAll();let old=document.getElementById('branch').value,branches=[...new Set(members.map(m=>m.branch).filter(Boolean))];document.getElementById('branch').innerHTML='<option value="">Tất cả chi họ</option>'+branches.map(x=>`<option>${esc(x)}</option>`).join('');document.getElementById('branch').value=branches.includes(old)?old:'';let pb=document.getElementById('printBranchBtn');pb.hidden=!document.getElementById('branch').value;pb.textContent=pb.hidden?'🖨 In đại gia đình':`🖨 In đại gia đình ${document.getElementById('branch').value}`;renderUpcoming()}
+// Bật/tắt cụm nút chèn và di chuyển thành viên
+function setMemberActionsVisible(show){
+ document.body.classList.toggle('member-actions-hidden',!show);
+ const btn=document.getElementById('toggleMemberActions');
+ if(btn){btn.setAttribute('aria-expanded',show?'true':'false');btn.textContent=show?'⚙️ Ẩn nút sắp xếp':'⚙️ Hiện nút sắp xếp'}
+ try{localStorage.setItem('nguyen_dinh_member_actions_visible',show?'1':'0')}catch(e){}
+}
+window.insertMemberAt=(id,after)=>{
+ const idx=members.findIndex(m=>String(m.id)===String(id));if(idx<0)return;
+ pendingInsertIndex=idx+(after?1:0);openForm(null);
+ document.getElementById('modalTitle').textContent=after?'Chèn thành viên phía dưới':'Chèn thành viên phía trên';
+};
+window.moveMember=(id,delta)=>{
+ const idx=members.findIndex(m=>String(m.id)===String(id)),to=idx+delta;
+ if(idx<0||to<0||to>=members.length)return;
+ const item=members.splice(idx,1)[0];members.splice(to,0,item);
+ const size=+document.getElementById('pageSize').value||10;
+ page=Math.floor(to/size)+1;save();
+};
+function render(){let data=filtered(),size=+document.getElementById('pageSize').value||10,max=Math.max(1,Math.ceil(data.length/size));if(page>max)page=max;let start=(page-1)*size,view=data.slice(start,start+size);document.getElementById('rows').innerHTML=view.map((m,i)=>`<tr><td><input type="checkbox" aria-label="Chọn ${esc(m.name)}" ${selected.has(m.id)?'checked':''} onchange="toggle('${m.id}',this.checked)"></td><td>${start+i+1}</td><td class="name">${esc(m.name)}</td><td>${esc(m.relation)}</td><td>${esc(m.branch)}</td><td>${esc(birthMonth(m.birthSolar))}</td><td>${esc(birthWeekday(m.birthSolar))}</td><td>${esc(formatSolar(m.birthSolar))}</td><td>${esc(m.birthLunar)}</td><td>${esc(m.birthCanChi)}</td><td>${esc(formatSolar(m.deathSolar))}</td><td>${esc(formatSolar(m.deathLunar))}</td><td>${esc(deathCanChi(m))}</td><td>${esc(calcAgeText(m)||m.age)}</td><td class="status ${calcStatus(m)==='Đã mất'?'dead':'alive'}">${calcStatus(m)==='Đã mất'?'🔴':'🟢'} ${calcStatus(m)}</td><td class="actions"><button title="Sửa" onclick="editMember('${m.id}')">✏️</button><button title="Xóa" onclick="deleteOne('${m.id}')">🗑️</button><span class="member-order-actions"><button title="Chèn thành viên phía trên" aria-label="Chèn phía trên" onclick="insertMemberAt('${m.id}',0)">＋↑</button><button title="Chèn thành viên phía dưới" aria-label="Chèn phía dưới" onclick="insertMemberAt('${m.id}',1)">＋↓</button><button title="Đưa thành viên lên" aria-label="Đưa lên" onclick="moveMember('${m.id}',-1)" ${members.indexOf(m)<=0?'disabled':''}>⬆️</button><button title="Đưa thành viên xuống" aria-label="Đưa xuống" onclick="moveMember('${m.id}',1)" ${members.indexOf(m)>=members.length-1?'disabled':''}>⬇️</button></span></td></tr>`).join('');document.getElementById('empty').hidden=!!view.length;document.getElementById('count').textContent=`${data.length} / ${members.length} thành viên`;document.getElementById('pageInfo').textContent=`Hiển thị ${data.length?start+1:0}–${Math.min(start+size,data.length)} / ${data.length}`;document.getElementById('prev').disabled=page<=1;document.getElementById('next').disabled=page>=max;document.getElementById('total').textContent=members.length;document.getElementById('alive').textContent=members.filter(m=>calcStatus(m)==='Living').length;const elderlyCount=members.filter(m=>calcStatus(m)==='Living'&&memberAge(m)!==null&&memberAge(m)>=60).length;document.getElementById('elderly').textContent=elderlyCount;document.getElementById('dead').textContent=members.filter(m=>calcStatus(m)==='Đã mất').length;document.getElementById('anniv').textContent=members.filter(m=>m.deathLunar).length;document.getElementById('birth').textContent=members.filter(m=>m.birthSolar||m.birthLunar).length;syncSelectAll();let old=document.getElementById('branch').value,branches=[...new Set(members.map(m=>m.branch).filter(Boolean))];document.getElementById('branch').innerHTML='<option value="">Tất cả chi họ</option>'+branches.map(x=>`<option>${esc(x)}</option>`).join('');document.getElementById('branch').value=branches.includes(old)?old:'';let pb=document.getElementById('printBranchBtn');pb.hidden=!document.getElementById('branch').value;pb.textContent=pb.hidden?'🖨 In đại gia đình':`🖨 In đại gia đình ${document.getElementById('branch').value}`;renderUpcoming()}
 window.toggle=(id,v)=>{v?selected.add(id):selected.delete(id);syncSelectAll()};
 function syncSelectAll(){const data=filtered(),box=document.getElementById('selectAll');if(!box)return;box.checked=data.length>0&&data.every(m=>selected.has(m.id));box.indeterminate=data.some(m=>selected.has(m.id))&&!box.checked}
 document.getElementById('selectAll').addEventListener('change',e=>{filtered().forEach(m=>e.target.checked?selected.add(m.id):selected.delete(m.id));render()});
@@ -619,10 +845,10 @@ function bindDateAutofill(){[['birthSolar','birthLunar','birthCanChi'],['deathSo
 
 function buildFields(){let c=document.getElementById('formFields');c.innerHTML=fields.map(([k,label,type,required])=>`<div class="field ${type==='textarea'?'full':''}"><label for="f_${k}">${label}${required?' *':''}</label>${type==='select'?`<select id="f_${k}" name="${k}" ${required?'required':''}>${(k==='gender'?['','Nam','Nữ','Khác']:['Living','Đã mất']).map(x=>`<option>${x}</option>`).join('')}</select>`:type==='textarea'?`<textarea id="f_${k}" name="${k}" rows="2"></textarea>`:`<input id="f_${k}" name="${k}" type="${type}" ${required?'required':''}>`}</div>`).join('')}
 function dateForInput(v){if(!v)return '';const s=String(v).trim();let a=s.match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})$/);if(a)return a[3]+'-'+String(a[2]).padStart(2,'0')+'-'+String(a[1]).padStart(2,'0');a=s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(a)return a[1]+'-'+String(a[2]).padStart(2,'0')+'-'+String(a[3]).padStart(2,'0');return '';}
-function openForm(m){editId=m?.id||null;buildFields();document.getElementById('modalTitle').textContent=m?'Sửa thông tin thành viên':'Thêm thành viên mới';fields.forEach(([k])=>{let el=document.getElementById('f_'+k);if(el){const v=m?.[k]|| (k==='status'?'Living':'');el.value=(el.type==='date'?dateForInput(v):v)}});bindDateAutofill();if(m?.deathSolar||m?.deathLunar)document.getElementById('f_deathCanChi').value=deathCanChi(m);document.getElementById('memberDialog').showModal()}
+function openForm(m){editId=m?.id||null;if(m)pendingInsertIndex=null;buildFields();document.getElementById('modalTitle').textContent=m?'Sửa thông tin thành viên':'Thêm thành viên mới';fields.forEach(([k])=>{let el=document.getElementById('f_'+k);if(el){const v=m?.[k]|| (k==='status'?'Living':'');el.value=(el.type==='date'?dateForInput(v):v)}});bindDateAutofill();if(m?.deathSolar||m?.deathLunar)document.getElementById('f_deathCanChi').value=deathCanChi(m);document.getElementById('memberDialog').showModal()}
 window.editMember=id=>openForm(members.find(m=>m.id===id));window.deleteOne=id=>{let m=members.find(x=>x.id===id);if(m&&confirm(`Xóa hồ sơ ${m.name}?`)){members=members.filter(x=>x.id!==id);selected.delete(id);save()}};
-document.getElementById('addBtn').onclick=()=>openForm(null);document.getElementById('editBtn').onclick=()=>{if(selected.size!==1)return alert('Hãy chọn đúng một thành viên để sửa.');openForm(members.find(m=>m.id===[...selected][0]))};document.getElementById('deleteBtn').onclick=()=>{if(!selected.size)return alert('Hãy chọn thành viên cần xóa.');if(confirm(`Bạn chắc chắn muốn xóa hàng loạt ${selected.size} hồ sơ đã chọn? Thao tác này không thể hoàn tác.`)){members=members.filter(m=>!selected.has(m.id));selected.clear();save()}};document.getElementById('cancelModal').onclick=()=>document.getElementById('memberDialog').close();
-document.getElementById('memberForm').onsubmit=e=>{e.preventDefault();let m={};fields.forEach(([k])=>m[k]=document.getElementById('f_'+k).value.trim());syncDeathCanChi(m);m.age=calcAgeText(m)||m.age;m.id=editId||('nd_'+Date.now()+'_'+Math.random().toString(36).slice(2,7));if(editId)members=members.map(x=>x.id===editId?m:x);else members.push(m);document.getElementById('memberDialog').close();save()};
+document.getElementById('toggleMemberActions').onclick=()=>setMemberActionsVisible(document.body.classList.contains('member-actions-hidden'));try{setMemberActionsVisible(localStorage.getItem('nguyen_dinh_member_actions_visible')==='1')}catch(e){setMemberActionsVisible(false)}document.getElementById('addBtn').onclick=()=>{pendingInsertIndex=null;openForm(null)};document.getElementById('editBtn').onclick=()=>{if(selected.size!==1)return alert('Hãy chọn đúng một thành viên để sửa.');openForm(members.find(m=>m.id===[...selected][0]))};document.getElementById('deleteBtn').onclick=()=>{if(!selected.size)return alert('Hãy chọn thành viên cần xóa.');if(confirm(`Bạn chắc chắn muốn xóa hàng loạt ${selected.size} hồ sơ đã chọn? Thao tác này không thể hoàn tác.`)){members=members.filter(m=>!selected.has(m.id));selected.clear();save()}};document.getElementById('cancelModal').onclick=()=>{pendingInsertIndex=null;document.getElementById('memberDialog').close()};
+document.getElementById('memberForm').onsubmit=e=>{e.preventDefault();let m={};fields.forEach(([k])=>m[k]=document.getElementById('f_'+k).value.trim());syncDeathCanChi(m);m.age=calcAgeText(m)||m.age;m.id=editId||('nd_'+Date.now()+'_'+Math.random().toString(36).slice(2,7));if(editId)members=members.map(x=>x.id===editId?m:x);else if(pendingInsertIndex!==null){members.splice(Math.max(0,Math.min(pendingInsertIndex,members.length)),0,m);pendingInsertIndex=null;}else members.push(m);document.getElementById('memberDialog').close();save()};
 ['search','branch','status','ageFilter','birthMonth','pageSize'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',()=>{page=1;render()}));document.getElementById('resetBtn').onclick=()=>{['search','branch','status','ageFilter','birthMonth'].forEach(id=>document.getElementById(id).value='');page=1;render()};document.getElementById('prev').onclick=()=>{page--;render()};document.getElementById('next').onclick=()=>{page++;render()};
 document.getElementById('printBranchBtn').onclick=()=>{const branch=document.getElementById('branch').value;if(!branch)return alert('Hãy chọn Chi họ trước khi in đại gia đình.');const data=members.filter(m=>m.branch===branch);if(!data.length)return alert('Không có thành viên thuộc chi họ này.');const cell=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const status=m=>calcStatus(m)==='Đã mất'?'dead':'alive';const cards=data.map((m,i)=>{const dead=status(m)==='dead';const birth=[m.birthSolar?('Sinh '+formatSolar(m.birthSolar)):'',m.birthLunar?('Âm lịch '+m.birthLunar):''].filter(Boolean).join(' • ');const death=dead?[m.deathSolar?('Mất '+formatSolar(m.deathSolar)):'',m.deathLunar?('Âm lịch '+m.deathLunar):'',calcAgeText(m)||m.age||''].filter(Boolean).join(' • '):'';return `<article class="member ${dead?'dead':'alive'} ${/gia trưởng|gđ ông|trưởng/i.test(m.relation||'')?'elder':''}"><div class="card-top"><span class="serial">${String(i+1).padStart(2,'0')}</span><span class="state">${dead?'✦ ĐÃ KHUẤT':''}</span></div><h3>${cell(m.name)}</h3><div class="relation">${cell(m.relation||'Thành viên')}</div><div class="ornament">❦</div>${birth?`<div class="detail">${cell(birth)}</div>`:''}${dead?`<div class="death">${cell(death)}</div>`:`<div class="age">${cell(calcAgeText(m)||m.age||'')}</div>`}</article>`}).join('');const w=window.open('','_blank');if(!w)return alert('Trình duyệt đang chặn cửa sổ in. Hãy cho phép cửa sổ bật lên rồi thử lại.');w.document.write('<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Đại gia đình '+cell(branch)+'</title><style>@page{size:A4 landscape;margin:8mm}*{box-sizing:border-box}body{margin:0;background:#f8f2e5;color:#38291d;font-family:"Times New Roman",serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}.frame{position:relative;min-height:100%;border:2px solid #a98239;padding:7mm 8mm;background:#fffdf7}.frame:before{content:"❦";position:absolute;inset:3mm;border:1px solid #d8bd7c;pointer-events:none;color:#a98239;font-size:22px;line-height:1;text-align:left;padding:2mm}.frame:after{content:"❦";position:absolute;top:1mm;left:50%;transform:translateX(-50%);padding:0 12px;background:#fffdf7;color:#a98239;font-size:24px}.frame{outline:1px solid #d8bd7c;outline-offset:-5mm}.head{text-align:center;padding:4mm 0 5mm;border-bottom:1px solid #d9c18a;margin-bottom:5mm}.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#96702e;margin:0 0 3mm}.head h1{font-family:Georgia,"Times New Roman",serif;font-size:27px;letter-spacing:2px;color:#702414;text-transform:uppercase;margin:0}.head h2{font-size:19px;letter-spacing:1px;color:#8c5d24;text-transform:uppercase;margin:3mm 0 2mm}.head p{font-size:11px;margin:0;color:#735f48}.legend{display:flex;justify-content:center;gap:8mm;margin-top:3mm;font-size:10px}.legend span{display:inline-flex;align-items:center;gap:5px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%}.dot.alive{background:#487b59}.dot.dead{background:#9b4939}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4mm;align-items:stretch}.member{position:relative;min-height:37mm;padding:4mm 4mm 3mm;border:1px solid #d8c69e;border-radius:2mm;background:#fffefa;break-inside:avoid;page-break-inside:avoid;overflow:hidden}.member:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2.2mm;background:#6b9a73}.member.dead:before{background:#a55a49}.member.elder{grid-column:span 2;border:1.5px solid #b58a3c;background:#fff8e9}.member.elder:before{background:#a98239}.card-top{display:flex;justify-content:space-between;align-items:center;gap:3px;margin-bottom:2mm}.serial{font-size:12px;color:#a17d3d;letter-spacing:1px}.state{font-family:Arial,sans-serif;font-size:11px;letter-spacing:.7px;color:#487b59;font-weight:bold}.dead .state{color:#9b4939}h3{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.2;color:#3b281c;text-align:center;margin:0 0 1.5mm}.elder h3{font-size:24px;color:#702414}.relation{text-align:center;font-size:14px;color:#92703d;font-style:italic}.ornament{text-align:center;color:#b9954c;font-size:16px;margin:1mm 0}.detail{text-align:center;font-size:14px;line-height:1.5;color:#51402e;font-weight:600}.death{text-align:center;font-size:14px;line-height:1.5;color:#8b3025;font-weight:bold;margin-top:1.5mm}.age{text-align:center;font-size:14px;color:#376b48;font-weight:bold;margin-top:1.5mm}.foot{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #d9c18a;margin-top:5mm;padding-top:2.5mm;font-size:9px;color:#846b45}.foot .copy{font-style:normal}.foot .date{white-space:nowrap}@media screen{body{padding:18px;background:#e9dfcd}.frame{max-width:100%;min-height:90vh}button{font:bold 14px Arial,sans-serif;padding:10px 18px;margin:0 0 14px;border:0;border-radius:6px;background:#702414;color:white;cursor:pointer}}@media print{body{background:#fff}.frame{min-height:0}.member{box-shadow:none}}</style></head><body><button onclick="window.print()">In / Lưu PDF</button><main class="frame"><header class="head"><p class="kicker">Gia phả • Cội nguồn • Kết nối các thế hệ</p><h1>Gia phả dòng họ Nguyễn Đình</h1><h2>Đại gia đình '+cell(branch).toUpperCase()+'</h2><p>Danh sách '+data.length+' thành viên • Lưu giữ truyền thống và tình thân</p></header><section class="cards">'+cards+'</section><footer class="foot"><span class="copy">Quyền tác giả © 2026 Nguyễn Đình Kiên</span><span>Gia phả lưu truyền trong dòng họ</span><span class="date">Ngày in: '+new Date().toLocaleDateString('vi-VN')+'</span></footer></main><script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>');w.document.close()};
 function download(name,content,type){let a=document.createElement('a'),url=URL.createObjectURL(new Blob([content],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
