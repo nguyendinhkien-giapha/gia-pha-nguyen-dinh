@@ -166,22 +166,26 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 @page{size:A4 landscape;margin:5mm}
 @media print{
  html,body{margin:0!important;padding:0!important;width:100%!important;height:100%!important;overflow:hidden!important;background:#fff!important}
- /* Hide the application's navigation and page chrome; print only the isolated family-tree copy. */
+ /* Hide application chrome and print only the framed family-tree copy. */
  body nav,body #nav,body .hero,body header,body .toolbar,body .tree-toolbar,body .tree-actions,
  body #treePanel,body main,body .layout,body .feature-panel{display:none!important;visibility:hidden!important}
  body>*:not(#treePrintRoot){display:none!important;visibility:hidden!important}
  #treePrintRoot,#treePrintRoot *{visibility:visible!important}
- #treePrintRoot{display:block!important;
- #treePrintRoot{display:block!important;position:fixed!important;left:0!important;top:0!important;width:var(--print-root-width,1085px)!important;height:auto!important;margin:0!important;padding:0!important;background:#fff!important;overflow:visible!important;transform:scale(var(--print-root-scale,1));transform-origin:top left;box-sizing:border-box}
- #treePrintRoot .family-tree{display:flex!important;flex-direction:column!important;gap:8px!important;margin:0!important;width:100%!important;overflow:visible!important}
- #treePrintRoot .tree-branch{overflow:visible!important;break-inside:avoid!important;page-break-inside:avoid!important;padding:8px!important}
+ #treePrintRoot{display:block!important;position:fixed!important;left:0!important;top:0!important;width:var(--print-root-width,1085px)!important;height:auto!important;margin:0!important;padding:0!important;overflow:visible!important;transform:scale(var(--print-root-scale,1));transform-origin:top left;box-sizing:border-box!important;background:#fffdf7!important;color:#38291d!important;border:2px solid #ad8738!important;outline:1px solid #d9bd78!important;outline-offset:-6px!important;padding:17px 22px 14px!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+ #treePrintRoot:before{content:"❦";position:absolute;top:3px;left:50%;transform:translateX(-50%);padding:0 12px;background:#fffdf7;color:#ad8738;font:24px Georgia,serif;z-index:2}
+ #treePrintRoot:after{content:"";position:absolute;inset:8px;border:1px solid #dfc98f;pointer-events:none;z-index:0}
+ #treePrintRoot .print-cover{position:relative;text-align:center;padding:5px 0 10px;margin:0 0 10px;border-bottom:1px solid #d8bd7c;z-index:1}
+ #treePrintRoot .print-kicker{margin:0 0 3px;color:#96702e;font:10px Georgia,"Times New Roman",serif;letter-spacing:4px;text-transform:uppercase}
+ #treePrintRoot .print-heading{font:700 25px Georgia,"Times New Roman",serif;letter-spacing:1.5px;text-transform:uppercase;margin:0;color:#702414!important}
+ #treePrintRoot .print-family-name{font:700 16px Georgia,"Times New Roman",serif;letter-spacing:1px;text-transform:uppercase;color:#96702e;margin:4px 0 3px}
+ #treePrintRoot .print-summary{font:10px Georgia,"Times New Roman",serif;margin:0;color:#665!important}
+ #treePrintRoot .family-tree{position:relative;z-index:1;display:flex!important;flex-direction:column!important;gap:8px!important;margin:0!important;width:100%!important;overflow:visible!important}
+ #treePrintRoot .tree-branch{overflow:visible!important;break-inside:avoid!important;page-break-inside:avoid!important;padding:8px!important;background:#fffefa!important;border-color:#d8c69e!important}
  #treePrintRoot .tree-levels{min-width:0!important;flex-wrap:wrap!important;justify-content:center!important;gap:8px!important}
  #treePrintRoot .tree-level{width:180px!important;max-width:180px!important}
  #treePrintRoot .tree-person{box-shadow:none!important;break-inside:avoid!important;page-break-inside:avoid!important;print-color-adjust:exact!important;-webkit-print-color-adjust:exact!important}
  #treePrintRoot .tree-person strong{font-size:13px!important}
  #treePrintRoot .tree-person small{font-size:11px!important}
- #treePrintRoot .print-heading{font-size:18px!important;font-weight:700!important;margin:0 0 5px!important;color:#741509!important}
- #treePrintRoot .print-summary{font-size:10px!important;margin:0 0 8px!important;color:#665!important}
 }
 
 .tree-toolbar{display:flex;gap:8px;flex-wrap:nowrap;align-items:center;margin:12px 0}
@@ -698,9 +702,106 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 @page{size:A4 landscape;margin:7mm}
 
 </style>
+
+<style id="tree-toolbar-mobile-three-controls">
+@media (max-width: 768px) {
+  /* Mobile: keep only branch selector, PDF export and print on one row. */
+  #treePanel .tree-toolbar {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 6px !important;
+    width: 100% !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+  #treePanel #treeSearch,
+  #treePanel #treeReset {
+    display: none !important;
+  }
+  #treePanel #treeBranch {
+    display: block !important;
+    flex: 1.2 1 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding: 8px 5px !important;
+    font-size: 12px !important;
+    box-sizing: border-box !important;
+  }
+  #treePanel .tree-toolbar button {
+    display: inline-flex !important;
+    flex: 1 1 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 42px !important;
+    padding: 7px 4px !important;
+    margin: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    box-sizing: border-box !important;
+  }
+}
+</style>
+
+
+<style id="mobile-nav-horizontal-final">
+@media (max-width:768px){
+  #nav{
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    justify-content:flex-start!important;
+    align-items:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    white-space:nowrap!important;
+    gap:7px!important;
+    padding:7px 10px 9px!important;
+    box-sizing:border-box!important;
+    -webkit-overflow-scrolling:touch!important;
+    overscroll-behavior-x:contain;
+    scrollbar-width:thin;
+    scrollbar-color:#d4ac5c #6d160b;
+    touch-action:pan-x pan-y;
+  }
+  #nav button{
+    display:flex!important;
+    flex:0 0 auto!important;
+    flex-shrink:0!important;
+    width:auto!important;
+    min-width:max-content!important;
+    max-width:none!important;
+    white-space:nowrap!important;
+    text-align:center!important;
+    scroll-snap-align:start;
+    padding:10px 14px!important;
+    line-height:1.2!important;
+  }
+  #nav::-webkit-scrollbar{height:4px}
+  #nav::-webkit-scrollbar-track{background:#6d160b}
+  #nav::-webkit-scrollbar-thumb{background:#d4ac5c;border-radius:8px}
+}
+</style>
 </head><body>
 <header class="hero"></header>
-<nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button><button data-view="members">⌂ Thành viên</button><button data-view="tree">🌳 Cây gia phả</button><button data-view="calendar">▦ Lịch sự kiện</button><button data-view="map">⌖ Bản đồ quê quán</button><button data-view="anomalies">⚠ Kiểm tra dữ liệu</button><button data-view="cemetery">🪦 Sổ mộ phần</button><button data-view="portal">✓ Công việc dòng họ</button><button data-view="backup">▣ Sao lưu / Khôi phục</button><button data-view="guide">🎉 Sự kiện gia đình</button></nav>
+<nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button>
+<button data-view="members">⌂ Thành viên</button>
+<button data-view="tree">🌳 Cây gia phả</button>
+<button data-view="calendar">▦ Lịch sự kiện</button>
+<button data-view="guide">🎉 Sự kiện gia đình</button>
+<button data-view="map">⌖ Bản đồ quê quán</button>
+<button data-view="cemetery">🪦 Sổ mộ phần</button>
+<button data-view="portal">✓ Công việc dòng họ</button>
+<button data-view="anomalies">⚠ Kiểm tra dữ liệu</button>
+</nav>
 <main>
 <div class="toolbar">
 <button class="btn mobile-manage-toggle" id="mobileDataManageBtn" type="button" aria-expanded="false">⚙️ Quản lý dữ liệu</button>
@@ -735,7 +836,7 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
  </div>
  <div id="treeSummary" class="notice"></div>
  <div id="familyTree" class="family-tree"></div>
- <p class="notice">Lưu ý: Dữ liệu hiện tại chưa có trường mã cha/mẹ hoặc quan hệ vợ/chồng riêng. Vì vậy sơ đồ thể hiện theo chi nhánh và đời được suy ra từ mục “Mối quan hệ”, chưa khẳng định đường nối cha–con cụ thể. Có thể bổ sung quan hệ cha, mẹ để dựng cây phả hệ chính xác đến từng gia đình.</p>
+ 
 </section>
 <section id="guidePanel" class="panel" hidden><h2>🎉 SỰ KIỆN GIA ĐÌNH</h2>
 <div class="feature-intro">Quản lý sự kiện của gia đình với nội dung, hình ảnh, ngày dương lịch, ngày âm lịch và thứ trong tuần tự động tính.</div>
@@ -1024,8 +1125,33 @@ function renderFamilyTree(){
   const isChild=m=>/^(con trai|con gái)(\s*\(đời thứ \d+\))?$/i.test(String(m?.relation||'').trim());
   const isSpouse=m=>/^(vợ|chồng|con dâu|con rể)$/i.test(String(m?.relation||'').trim());
   const isDesc=m=>/^(cháu|chắt|chút)/i.test(String(m?.relation||'').trim());
-  const person=m=>m?`<div class="tree-person ${m.status==='Đã mất'?'dead':''}" style="min-width:150px;max-width:220px"><strong>${esc(m.name||'Chưa có tên')}</strong><small>${esc(m.relation||'Chưa rõ quan hệ')} · ${esc(m.status||'')}</small></div>`:'';
+  const person=(m,generationLevel=null)=>{
+   if(!m)return '';
+   const deceased=calcStatus(m)==='Đã mất';
+   const lunarDeathDate=m.deathSolar?lunarTextFromSolar(m.deathSolar):String(m.deathLunar||'').trim();
+   const detail=deceased
+    ? (lunarDeathDate?`Đã mất ${lunarDeathDate}`:'Chưa cập nhật ngày mất')
+    : (()=>{const age=memberAge(m);return age!==null?`${age} tuổi`:'Chưa rõ tuổi'})();
+   const rawRelation=String(m.relation||'Chưa rõ quan hệ').trim();
+   const normalizedRelation=rawRelation.toLocaleLowerCase('vi');
+   const isFemale=String(m.gender||'').toLocaleLowerCase('vi')==='nữ' || /gái|dâu/.test(normalizedRelation);
+   const isMale=String(m.gender||'').toLocaleLowerCase('vi')==='nam' || /trai|rể/.test(normalizedRelation);
+   let relationLabel=normalizedRelation==='vợ'?'Con dâu':(normalizedRelation==='chồng'?'Con rể':rawRelation);
+   // Dâu/rể ở mọi thế hệ chỉ ghi quan hệ, không gắn số đời.
+   if(/dâu/.test(normalizedRelation)) relationLabel='Con dâu';
+   else if(/rể/.test(normalizedRelation)) relationLabel='Con rể';
+   else if(generationLevel && (generationLevel===6 || generationLevel===7 || generationLevel===8)){
+    let childRole='';
+    if(generationLevel===6 && /^(con trai|con gái)(\s*\(đời thứ \d+\))?$/i.test(rawRelation)) childRole=/gái/i.test(rawRelation)?'Con gái':'Con trai';
+    if(generationLevel===7 && /^cháu\s+(trai|gái)$/i.test(rawRelation)) childRole=/gái/i.test(rawRelation)?'Con gái':'Con trai';
+    if(generationLevel===8 && /^chắt\s+(trai|gái)$/i.test(rawRelation)) childRole=/gái/i.test(rawRelation)?'Con gái':'Con trai';
+    if(!childRole && (isFemale||isMale)) childRole=isFemale?'Con gái':'Con trai';
+    if(childRole) relationLabel=`${childRole} (đời thứ ${generationLevel})`;
+   }
+   return `<div class="tree-person ${deceased?'dead':''}" style="min-width:150px;max-width:220px"><strong>${esc(m.name||'Chưa có tên')}</strong><small>${esc(relationLabel)} · ${esc(detail)}</small></div>`;
+  };
   const couple=(a,b)=>`<div class="tree-couple">${person(a)}${b?`<div class="tree-marriage">♥</div>${person(b)}`:''}</div>`;
+  const coupleGeneration=(a,b,generation)=>`<div class="tree-couple">${person(a,generation)}${b?`<div class="tree-marriage">♥</div>${person(b)}`:''}</div>`;
   const renderBranch=(branch,list)=>{
    // Người trùng tên nhánh là chủ hộ/đầu nhánh; ghép với vợ/chồng của chính người đó.
    const headIndex=list.findIndex(m=>String(m.name||'').trim().toLocaleLowerCase('vi')===String(branch).trim().toLocaleLowerCase('vi'));
@@ -1082,9 +1208,9 @@ function renderFamilyTree(){
       activeGrand.great.push(d);
      }
     });
-    const grandHtml=grands.map(g=>`<div class="tree-grand-unit"><div class="tree-unit-couple">${couple(g.person,g.spouse)}</div>${g.great.length?`<div class="tree-down-line"></div><div class="tree-generation-label">Chắt</div><div class="tree-desc-row">${g.great.map(person).join('')}</div>`:''}</div>`).join('');
-    const extra=unassignedGreat.length?`<div class="tree-generation-label">Chắt (chưa xác định gia đình)</div><div class="tree-desc-row">${unassignedGreat.map(person).join('')}</div>`:'';
-    return `<div class="tree-family-unit"><div class="tree-unit-couple">${couple(u.child,u.spouse)}</div>${grands.length||unassignedGreat.length?`<div class="tree-down-line"></div><div class="tree-descendants"><div class="tree-generation-label">Cháu</div><div class="tree-grand-grid">${grandHtml}</div>${extra}</div>`:''}</div>`;
+    const grandHtml=grands.map(g=>`<div class="tree-grand-unit"><div class="tree-unit-couple">${coupleGeneration(g.person,g.spouse,7)}</div>${g.great.length?`<div class="tree-down-line"></div><div class="tree-generation-label">Chắt</div><div class="tree-desc-row">${g.great.map(d=>person(d,8)).join('')}</div>`:''}</div>`).join('');
+    const extra=unassignedGreat.length?`<div class="tree-generation-label">Chắt (chưa xác định gia đình)</div><div class="tree-desc-row">${unassignedGreat.map(d=>person(d,8)).join('')}</div>`:'';
+    return `<div class="tree-family-unit"><div class="tree-unit-couple">${person(u.child,6)}${u.spouse?`<div class="tree-marriage">♥</div>${person(u.spouse)}`:''}</div>${grands.length||unassignedGreat.length?`<div class="tree-down-line"></div><div class="tree-descendants"><div class="tree-generation-label">Cháu</div><div class="tree-grand-grid">${grandHtml}</div>${extra}</div>`:''}</div>`;
    };
    const childHtml=childUnits.map(renderUnit).join('');
    const otherHtml=otherUnits.length?`<div class="tree-unassigned"><div class="tree-generation-label">Thành viên chưa xác định vị trí</div><div class="tree-desc-row">${otherUnits.map(u=>person(u.child)).join('')}</div></div>`:'';
@@ -1142,15 +1268,25 @@ function prepareTreePrint(){
  if(activeTreePrintRoot)activeTreePrintRoot.remove();
  const root=document.createElement('div');
  root.id='treePrintRoot';
+ const cover=document.createElement('header');
+ cover.className='print-cover';
+ const kicker=document.createElement('p');
+ kicker.className='print-kicker';
+ kicker.textContent='GIA PHẢ • CỘI NGUỒN • KẾT NỐI CÁC THẾ HỆ';
  const heading=document.createElement('h1');
  heading.className='print-heading';
- heading.textContent='CÂY GIA PHẢ DÒNG HỌ NGUYỄN ĐÌNH';
+ heading.textContent='GIA PHẢ DÒNG HỌ NGUYỄN ĐÌNH';
+ const familyName=document.createElement('h2');
+ familyName.className='print-family-name';
+ familyName.textContent='ĐẠI GIA ĐÌNH NGUYỄN ĐÌNH';
  const summary=document.createElement('p');
  summary.className='print-summary';
- summary.textContent=document.getElementById('treeSummary')?.textContent||'';
+ const liveSummary=document.getElementById('treeSummary')?.textContent||'';
+ summary.textContent=liveSummary ? liveSummary+' • Lưu giữ truyền thống và tình thân' : 'Lưu giữ truyền thống và tình thân';
+ cover.append(kicker,heading,familyName,summary);
  const clone=original.cloneNode(true);
  clone.id='familyTreePrintCopy';
- root.append(heading,summary,clone);
+ root.append(cover,clone);
  document.body.appendChild(root);
  activeTreePrintRoot=root;
  root.style.setProperty('--print-root-scale','1');
