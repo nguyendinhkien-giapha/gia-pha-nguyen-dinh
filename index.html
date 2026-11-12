@@ -950,6 +950,322 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 }
 </style>
 
+<style id="lineage-mobile-layout-v9">
+/* PC: keep spouse cards in one centered row with equal widths. */
+.lineage-generation > .tree-couple:has(> .tree-marriage) {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  justify-items: stretch !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+.lineage-generation > .tree-couple:has(> .tree-marriage) > .tree-person {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 88px !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  overflow-wrap: anywhere !important;
+}
+.lineage-generation > .tree-couple:has(> .tree-marriage) > .tree-marriage {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  width: 30px !important;
+  min-width: 30px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.lineage-generation > .tree-couple:not(:has(> .tree-marriage)) {
+  display: flex !important;
+  justify-content: center !important;
+}
+.lineage-generation > .tree-couple:not(:has(> .tree-marriage)) > .tree-person {
+  width: min(100%, 340px) !important;
+  max-width: 340px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.lineage-generation > .tree-down-line {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (max-width: 650px) {
+  /* On phones, stack spouse cards vertically in a single centered column.
+     This prevents flex-wrap from placing the heart beside a card or squeezing names. */
+  .lineage-generation > .tree-couple:has(> .tree-marriage) {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+  }
+  .lineage-generation > .tree-couple:has(> .tree-marriage) > .tree-person {
+    flex: 0 1 auto !important;
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+    min-height: 82px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 12px 14px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+  .lineage-generation > .tree-couple:has(> .tree-marriage) > .tree-person strong,
+  .lineage-generation > .tree-couple:has(> .tree-marriage) > .tree-person small {
+    width: 100% !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    overflow-wrap: break-word !important;
+  }
+  .lineage-generation > .tree-couple:has(> .tree-marriage) > .tree-marriage {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 18px !important;
+    align-self: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+  .lineage-generation > .tree-couple:not(:has(> .tree-marriage)) > .tree-person {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+  }
+  .lineage-generation > .tree-down-line {
+    height: 22px !important;
+    margin: 0 auto !important;
+  }
+}
+</style>
+
+
+<style id="liem-two-wives-layout-v10">
+/* Riêng gia đình ông Nguyễn Đình Liêm: một người chồng, hai người vợ.
+   Không xếp ba thẻ và hai trái tim vào cùng một hàng hẹp. */
+.liem-family-couple {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+}
+.liem-husband {
+  width: min(100%, 360px);
+  display: flex;
+  justify-content: center;
+}
+.liem-husband > .tree-person {
+  width: 100% !important;
+  max-width: 360px !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+.liem-wives {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+  justify-items: center;
+}
+.liem-wife {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.liem-wife > .tree-marriage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  line-height: 1;
+  margin: 0;
+}
+.liem-wife > .tree-person {
+  width: min(100%, 340px) !important;
+  max-width: 340px !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+@media (max-width: 650px) {
+  .liem-family-couple {
+    width: 100%;
+    padding: 0 8px;
+    gap: 10px;
+  }
+  .liem-husband {
+    width: min(100%, 360px);
+  }
+  .liem-wives {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+  }
+  .liem-wife {
+    width: 100%;
+    gap: 4px;
+  }
+  .liem-wife > .tree-person {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+    padding: 11px 13px !important;
+  }
+  .liem-wife > .tree-marriage {
+    height: 18px;
+    font-size: 20px;
+  }
+}
+</style>
+
+
+<style id="ancestor-cards-equal-size-v11">
+/* Đồng bộ kích thước thẻ ở phần gia phả tổ tiên: Cung, Chuẩn, Khê */
+.lineage-generation > .tree-person,
+.lineage-generation > .tree-couple > .tree-person {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 88px !important;
+  height: 88px !important;
+  padding: 12px 14px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.lineage-generation > .tree-person {
+  width: 420px !important;
+  max-width: min(420px, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.lineage-generation > .tree-couple {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+  gap: 8px !important;
+  width: min(900px, 100%) !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+.lineage-generation > .tree-couple > .tree-person {
+  min-width: 0 !important;
+}
+.lineage-generation > .tree-couple > .tree-marriage {
+  width: 30px !important;
+  min-width: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+}
+.lineage-generation .tree-person strong,
+.lineage-generation .tree-person small {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  line-height: 1.35 !important;
+}
+.lineage-generation .tree-person small { margin-top: 5px !important; }
+
+/* Đồng bộ ba thẻ trong gia đình ông Liêm: thẻ ông và hai thẻ vợ */
+.liem-family-couple { max-width: 760px !important; }
+.liem-husband, .liem-wife { min-width: 0 !important; }
+.liem-husband > .tree-person,
+.liem-wife > .tree-person {
+  width: 100% !important;
+  max-width: 340px !important;
+  min-width: 0 !important;
+  min-height: 88px !important;
+  height: 88px !important;
+  padding: 12px 12px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.liem-husband { width: 340px !important; max-width: 100% !important; }
+.liem-wives { grid-template-columns: repeat(2, minmax(0, 340px)) !important; justify-content: center !important; }
+@media (max-width: 650px) {
+  .lineage-generation > .tree-person {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    min-height: 82px !important;
+    height: auto !important;
+  }
+  .lineage-generation > .tree-couple {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 6px !important;
+  }
+  .lineage-generation > .tree-couple > .tree-person {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    min-height: 82px !important;
+    height: auto !important;
+  }
+  .lineage-generation > .tree-couple > .tree-marriage {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 18px !important;
+  }
+  .liem-husband { width: min(100%, 360px) !important; }
+  .liem-husband > .tree-person,
+  .liem-wife > .tree-person {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    min-height: 82px !important;
+    height: auto !important;
+  }
+  .liem-wives { grid-template-columns: minmax(0, 1fr) !important; }
+}
+</style>
+
 </head><body>
 <header class="hero"></header>
 <nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button>
@@ -1382,6 +1698,7 @@ function renderFamilyTree(){
    if(!grouped.has(b))grouped.set(b,[]);grouped.get(b).push(m);
   });
   const findPerson=name=>source.find(m=>String(m.name||'').trim()===name)||((Array.isArray(EMBEDDED_BACKUP.members)?EMBEDDED_BACKUP.members:[]).find(m=>String(m.name||'').trim()===name))||(Array.isArray(members)?members.find(m=>String(m.name||'').trim()===name):null);
+  const renderLiemFamily=(husband,wife1,wife2)=>`<div class="liem-family-couple">${husband?`<div class="liem-husband">${person(husband)}</div>`:''}<div class="liem-wives">${[wife1,wife2].filter(Boolean).map(w=>`<div class="liem-wife"><div class="tree-marriage">♥</div>${person(w)}</div>`).join('')}</div></div>`;
   if(!selected && !q){
    const ancestors=[
     ['Nguyễn Đình Cung',null],
@@ -1395,12 +1712,12 @@ function renderFamilyTree(){
    const liem=findPerson('Nguyễn Đình Liêm');
    const trinh=findPerson('Đặng Thị Trinh');
    const phuc=findPerson('Đặng Thị Phúc');
-   const liemFamily=liem?`<div class="lineage-generation"><div class="lineage-label">Đời thứ 4 · Con trai và con dâu ông Khê</div><div class="tree-couple">${person(liem)}${trinh?`<div class="tree-marriage">♥</div>${person(trinh)}`:''}${phuc?`<div class="tree-marriage">♥</div>${person(phuc)}`:''}</div></div>`:'';
+   const liemFamily=liem?`<div class="lineage-generation"><div class="lineage-label">Đời thứ 4 · Con trai và con dâu ông Khê</div>${renderLiemFamily(liem,trinh,phuc)}</div>`:'';
    const excluded=new Set(['Nguyễn Đình Cung','Nguyễn Đình Chuẩn','Nguyễn Đình Khê']);
    const descendants=[...grouped.entries()].filter(([b])=>!excluded.has(b));
    root.innerHTML=`<section class="lineage-main"><h3>🌳 GỐC GIA PHẢ DÒNG HỌ NGUYỄN ĐÌNH</h3>${ancestorHtml}${liemFamily}<div class="tree-down-line lineage-link"></div><div class="lineage-label">Các con của ông Liêm · 13 gia đình và các thế hệ cháu, chắt</div><div class="lineage-children">${descendants.map(([b,l])=>renderBranch(b,l)).join('')}</div></section>`;
   }else{
-   const liemHeader=selected==='__LIEM__'?`<div class="lineage-main"><h3>🌳 Gia đình ông Nguyễn Đình Liêm</h3><div class="tree-couple">${person(findPerson('Nguyễn Đình Liêm'))}${person(findPerson('Đặng Thị Trinh'))}${person(findPerson('Đặng Thị Phúc'))}</div><div class="lineage-note">Các chi nhánh con cháu của ông Nguyễn Đình Liêm</div></div>`:'';
+   const liemHeader=selected==='__LIEM__'?`<div class="lineage-main"><h3>🌳 Gia đình ông Nguyễn Đình Liêm</h3>${renderLiemFamily(findPerson('Nguyễn Đình Liêm'),findPerson('Đặng Thị Trinh'),findPerson('Đặng Thị Phúc'))}<div class="lineage-note">Các chi nhánh con cháu của ông Nguyễn Đình Liêm</div></div>`:'';
   if(selected==='__LIEM__'){
    const descendantMap=new Map();
    source.forEach(m=>{
