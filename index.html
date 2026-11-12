@@ -790,6 +790,166 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
   #nav::-webkit-scrollbar-thumb{background:#d4ac5c;border-radius:8px}
 }
 </style>
+
+<style id="tree-layout-stable-v7">
+/* Cặp con trong từng ô gia đình: markup thực tế là .tree-unit-couple > person + heart + person */
+.tree-family-unit > .tree-unit-couple:has(> .tree-marriage) {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  justify-items: stretch !important;
+  justify-content: stretch !important;
+  gap: 8px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+.tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 88px !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 10px 8px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}
+.tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person strong,
+.tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person small {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  line-height: 1.35 !important;
+}
+.tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person small {
+  margin-top: 5px !important;
+}
+.tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-marriage {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  width: 28px !important;
+  min-width: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+/* Một thành viên chưa có vợ/chồng: giữ một ô đơn ở giữa, không tạo cột trống. */
+.tree-family-unit > .tree-unit-couple:not(:has(> .tree-marriage)) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+.tree-family-unit > .tree-unit-couple:not(:has(> .tree-marriage)) > .tree-person {
+  flex: 0 1 220px !important;
+  width: 220px !important;
+  min-width: 150px !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+/* Cặp cháu được bọc trong .tree-couple bên trong .tree-unit-couple. */
+.tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage),
+.tree-root-family > .tree-couple:has(> .tree-marriage) {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) !important;
+  align-items: stretch !important;
+  justify-items: stretch !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 560px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+.tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-person,
+.tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-person {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 88px !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 10px 8px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  overflow-wrap: break-word !important;
+}
+.tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-person strong,
+.tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-person small,
+.tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-person strong,
+.tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-person small {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  line-height: 1.35 !important;
+}
+.tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-marriage,
+.tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-marriage {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  width: 28px !important;
+  min-width: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.tree-grand-unit > .tree-unit-couple > .tree-couple:not(:has(> .tree-marriage)),
+.tree-root-family > .tree-couple:not(:has(> .tree-marriage)) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+}
+@media (max-width: 650px) {
+  .tree-family-unit > .tree-unit-couple:has(> .tree-marriage),
+  .tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage),
+  .tree-root-family > .tree-couple:has(> .tree-marriage) {
+    grid-template-columns: minmax(0, 1fr) 22px minmax(0, 1fr) !important;
+    gap: 4px !important;
+  }
+  .tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person,
+  .tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-person,
+  .tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-person {
+    min-height: 82px !important;
+    padding: 8px 5px !important;
+  }
+  .tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person strong,
+  .tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-person strong,
+  .tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-person strong {
+    font-size: 12px !important;
+  }
+  .tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-person small,
+  .tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-person small,
+  .tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-person small {
+    font-size: 11px !important;
+  }
+  .tree-family-unit > .tree-unit-couple:has(> .tree-marriage) > .tree-marriage,
+  .tree-grand-unit > .tree-unit-couple > .tree-couple:has(> .tree-marriage) > .tree-marriage,
+  .tree-root-family > .tree-couple:has(> .tree-marriage) > .tree-marriage {
+    width: 22px !important;
+    min-width: 22px !important;
+    font-size: 18px !important;
+  }
+}
+</style>
+
 </head><body>
 <header class="hero"></header>
 <nav id="nav"><button class="active" data-view="stats">⌂ Trang chủ</button>
