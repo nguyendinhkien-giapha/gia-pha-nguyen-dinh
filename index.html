@@ -1279,6 +1279,13 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
   #musicPanel #musicList audio { width: 100% !important; max-width: 100% !important; }
 }
 </style>
+<style id="music-single-song">
+#musicPanel > #musicForm,
+#musicPanel > .feature-toolbar,
+#musicPanel > p.notice { display:none !important; }
+#musicPanel #musicList { display:block !important; width:100% !important; }
+#musicPanel #musicList .feature-card { margin:10px 0 !important; }
+</style>
 </head>
 <style id="cemetery-photo-lightbox">
 .cem-photo-viewer{position:fixed;inset:0;z-index:99999;background:rgba(20,12,8,.92);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:58px 18px 24px;box-sizing:border-box}.cem-photo-viewer[hidden]{display:none!important}.cem-photo-viewer img{display:block;max-width:min(96vw,1400px);max-height:calc(100vh - 115px);width:auto;height:auto;object-fit:contain;border-radius:8px;box-shadow:0 8px 36px #0008}.cem-photo-close{position:absolute;right:18px;top:14px;width:44px;height:44px;border:0;border-radius:50%;background:#8b3020;color:#fff;font-size:32px;line-height:1;cursor:pointer}.cem-photo-caption{color:#fff;text-align:center;margin-top:12px;font:14px Arial,sans-serif}
@@ -1361,7 +1368,7 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 </section>
 <section id="musicPanel" class="feature-panel" hidden>
   <h2>🎵 KHO ÂM NHẠC DÒNG HỌ NGUYỄN ĐÌNH</h2>
-  <p class="feature-intro">Lưu giữ những ca khúc về tổ tiên, truyền thống, công đức và tình đoàn kết của dòng họ. Có thể tải tệp nhạc lên thiết bị hoặc lưu đường dẫn nghe trực tuyến.</p>
+  <p class="feature-intro">Bài hát duy nhất ca ngợi tổ tiên, truyền thống và tình đoàn kết của dòng họ Nguyễn Đình.</p>
   <form id="musicForm" class="feature-card">
     <div class="feature-grid">
       <label>Tên bài hát<input id="musicTitle" required placeholder="Ví dụ: Nguyễn Đình – Một dòng họ, một cội nguồn"></label>
@@ -2093,8 +2100,7 @@ function openMusicDb(){if(musicDbPromise)return musicDbPromise;musicDbPromise=ne
 async function musicAll(){const db=await openMusicDb();return new Promise((resolve,reject)=>{const r=db.transaction(MUSIC_STORE).objectStore(MUSIC_STORE).getAll();r.onsuccess=()=>resolve(r.result||[]);r.onerror=()=>reject(r.error)})}
 async function musicPut(item){const db=await openMusicDb();return new Promise((resolve,reject)=>{const tx=db.transaction(MUSIC_STORE,'readwrite');const r=tx.objectStore(MUSIC_STORE).put(item);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}
 async function musicDelete(id){const db=await openMusicDb();return new Promise((resolve,reject)=>{const tx=db.transaction(MUSIC_STORE,'readwrite');tx.objectStore(MUSIC_STORE).delete(Number(id));tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}
-async function renderMusic(){const list=document.getElementById('musicList');if(!list)return;musicObjectUrls.forEach(URL.revokeObjectURL);musicObjectUrls=[];try{const all=await musicAll(),q=(document.getElementById('musicSearch').value||'').trim().toLocaleLowerCase('vi');const rows=all.filter(x=>[x.title,x.artist,x.category,x.notes].join(' ').toLocaleLowerCase('vi').includes(q));document.getElementById('musicCount').textContent=`${rows.length} / ${all.length} bài hát`;if(!rows.length){list.innerHTML='<div class="empty">Chưa có bài hát phù hợp. Hãy thêm ca khúc đầu tiên của dòng họ.</div>';return}list.innerHTML=rows.map(x=>`<article class="feature-card" style="margin:10px 0"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><h3 style="margin:0 0 5px;color:var(--red)">${esc(x.title)}</h3><div class="notice">${esc(x.artist||'Chưa ghi người thể hiện')} · ${esc(x.category||'Khác')}</div></div><button class="btn gray" type="button" data-music-delete="${x.id}">Xóa</button></div>${x.notes?`<p>${esc(x.notes).replace(/\n/g,'<br>')}</p>`:''}${x.blob?`<audio controls preload="none" style="width:100%;margin-top:10px" data-audio-id="${x.id}"></audio>`:''}${x.url?`<p><a href="${esc(x.url)}" target="_blank" rel="noopener">Mở đường dẫn nghe trực tuyến ↗</a></p>`:''}</article>`).join('');for(const x of rows){if(x.blob){const el=list.querySelector(`[data-audio-id="${x.id}"]`);if(el){const u=URL.createObjectURL(x.blob);musicObjectUrls.push(u);el.src=u}}}list.querySelectorAll('[data-music-delete]').forEach(b=>b.addEventListener('click',async()=>{if(confirm('Xóa bài hát này khỏi kho âm nhạc?')){await musicDelete(b.dataset.musicDelete);renderMusic()}}))}catch(e){list.innerHTML='<div class="empty">Trình duyệt không hỗ trợ hoặc không mở được kho lưu trữ âm thanh. Hãy dùng Chrome hoặc Edge bản mới.</div>';console.error(e)}}
-document.getElementById('musicForm')?.addEventListener('submit',async e=>{e.preventDefault();const file=document.getElementById('musicFile').files[0],url=document.getElementById('musicUrl').value.trim();if(!file&&!url){alert('Hãy chọn tệp âm thanh hoặc nhập đường dẫn nghe trực tuyến.');return}if(url&&!/^https?:\/\//i.test(url)){alert('Đường dẫn phải bắt đầu bằng http:// hoặc https://');return}try{await musicPut({title:document.getElementById('musicTitle').value.trim(),artist:document.getElementById('musicArtist').value.trim(),category:document.getElementById('musicCategory').value,url,notes:document.getElementById('musicNotes').value.trim(),blob:file||null,fileName:file?.name||'',createdAt:new Date().toISOString()});e.target.reset();document.getElementById('musicStatus').textContent='Đã lưu bài hát vào kho âm nhạc trên thiết bị này.';renderMusic()}catch(err){alert('Không lưu được. Có thể bộ nhớ trình duyệt đã đầy. Hãy thử tệp nhỏ hơn.');console.error(err)}});
-document.getElementById('musicSearch')?.addEventListener('input',renderMusic);
+function renderMusic(){const list=document.getElementById('musicList');if(!list)return;list.innerHTML=`<article class="feature-card" style="margin:10px 0;padding:18px"><h3 style="margin:0 0 8px;color:var(--red)">🎵 Ca khúc ca ngợi dòng họ Nguyễn Đình</h3><p class="notice" style="margin:0 0 14px">Bài hát chính thức của dòng họ · Nghe trực tuyến</p><a class="btn" href="https://suno.com/song/85ced43a-cbf5-4945-8d95-75df873079f7?sh=nWEP4pe9h7LzjY4v" target="_blank" rel="noopener noreferrer" style="display:inline-flex;text-decoration:none">▶ Nghe bài hát trên Suno ↗</a></article>`;const count=document.getElementById('musicCount');if(count)count.textContent='01 bài hát';}
+
 
 </script></body></html>
