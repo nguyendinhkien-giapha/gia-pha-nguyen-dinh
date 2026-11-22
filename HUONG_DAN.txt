@@ -1,9 +1,11 @@
-GIA PHA NGUYEN DINH - CAP NHAT HIEN THI DOI THU 6, 7 VA 8
+GIA PHA NGUYEN DINH - V18
 
-Quy tac tren cay gia pha:
-- Doi thu 6: Con trai/Con gai (doi thu 6); dau/re chi ghi Con dau/Con re.
-- Doi thu 7: Con trai/Con gai (doi thu 7); dau/re chi ghi Con dau/Con re.
-- Doi thu 8: Con trai/Con gai (doi thu 8); dau/re chi ghi Con dau/Con re.
-- Nguoi dang song hien thi tuoi; nguoi da mat chi hien thi ngay mat am lich.
+Da sua loi cot Doi thu: du lieu dong goi da co so doi cho 133 ho so; khi mo tren trinh duyet dang co du lieu cu, phan mem tu bo sung cac o Doi thu dang trong theo ban sao luu V17 (khong ghi de so doi da co).
 
-Giai nen va tai cac tep trong goi len website nhu ban truoc.
+CACH CAP NHAT
+1. Sao luu JSON tu ban dang su dung truoc khi thay phien ban.
+2. Giai nen ZIP va mo index.html.
+3. Neu mo tren thu muc/trinh duyet moi, du lieu 133 thanh vien da duoc dong goi san. Neu mo tren trinh duyet cu, phan mem chi bo sung cac so doi con trong, khong ghi de so doi da co.
+4. Kiem tra cac truong hop quan he/chi nhanh chua ro voi gia pha goc.
+
+Luu y: Ban sao luu nguoi dung cung cap co 133 ho so; phan mem khong tu them nguoi thu 134. Cac so doi hien co duoc giu nguyen.
