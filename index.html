@@ -1699,7 +1699,40 @@ window.editMember=id=>openForm(members.find(m=>m.id===id));window.deleteOne=id=>
 document.getElementById('toggleMemberActions').onclick=()=>setMemberActionsVisible(document.body.classList.contains('member-actions-hidden'));try{setMemberActionsVisible(localStorage.getItem('nguyen_dinh_member_actions_visible')==='1')}catch(e){setMemberActionsVisible(false)}document.getElementById('addBtn').onclick=()=>{pendingInsertIndex=null;openForm(null)};document.getElementById('editBtn').onclick=()=>{if(selected.size!==1)return alert('Hãy chọn đúng một thành viên để sửa.');openForm(members.find(m=>m.id===[...selected][0]))};document.getElementById('deleteBtn').onclick=()=>{if(!selected.size)return alert('Hãy chọn thành viên cần xóa.');if(confirm(`Bạn chắc chắn muốn xóa hàng loạt ${selected.size} hồ sơ đã chọn? Thao tác này không thể hoàn tác.`)){members=members.filter(m=>!selected.has(m.id));selected.clear();save()}};document.getElementById('cancelModal').onclick=()=>{pendingInsertIndex=null;document.getElementById('memberDialog').close()};
 document.getElementById('memberForm').onsubmit=e=>{e.preventDefault();let m={};fields.forEach(([k])=>m[k]=document.getElementById('f_'+k).value.trim());syncDeathCanChi(m);m.age=calcAgeText(m);m.id=editId||('nd_'+Date.now()+'_'+Math.random().toString(36).slice(2,7));if(editId)members=members.map(x=>x.id===editId?m:x);else if(pendingInsertIndex!==null){members.splice(Math.max(0,Math.min(pendingInsertIndex,members.length)),0,m);pendingInsertIndex=null;}else members.push(m);document.getElementById('memberDialog').close();save()};
 ['search','branch','status','generationFilter','ageFilter','birthMonth','pageSize'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',()=>{page=1;render()}));document.getElementById('resetBtn').onclick=()=>{['search','branch','status','generationFilter','ageFilter','birthMonth'].forEach(id=>document.getElementById(id).value='');page=1;render()};document.getElementById('prev').onclick=()=>{page--;render()};document.getElementById('next').onclick=()=>{page++;render()};
-document.getElementById('printBranchBtn').onclick=()=>{const branch=document.getElementById('branch').value;if(!branch)return alert('Hãy chọn Gia đình trước khi in đại gia đình.');const data=branch==='__LIEM__'?members.filter(belongsToLiemFamily):members.filter(m=>m.branch===branch);if(!data.length)return alert('Không có thành viên thuộc gia đình này.');const cell=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const status=m=>calcStatus(m)==='Đã mất'?'dead':'alive';const cards=data.map((m,i)=>{const dead=status(m)==='dead';const birth=[m.birthSolar?('Sinh '+formatSolar(m.birthSolar)):'',m.birthLunar?('Âm lịch '+m.birthLunar):''].filter(Boolean).join(' • ');const death=dead?[m.deathSolar?('Mất '+formatSolar(m.deathSolar)):'',m.deathLunar?('Âm lịch '+m.deathLunar):'',calcAgeText(m)||''].filter(Boolean).join(' • '):'';return `<article class="member ${dead?'dead':'alive'} ${/gia trưởng|gđ ông|trưởng/i.test(m.relation||'')?'elder':''}"><div class="card-top"><span class="serial">${String(i+1).padStart(2,'0')}</span><span class="state">${dead?'✦ ĐÃ KHUẤT':''}</span></div><h3>${cell(m.name)}</h3><div class="relation">${cell(m.relation||'Thành viên')}</div><div class="ornament">❦</div>${birth?`<div class="detail">${cell(birth)}</div>`:''}${dead?`<div class="death">${cell(death)}</div>`:`<div class="age">${cell(calcAgeText(m)||'')}</div>`}</article>`}).join('');const w=window.open('','_blank');if(!w)return alert('Trình duyệt đang chặn cửa sổ in. Hãy cho phép cửa sổ bật lên rồi thử lại.');w.document.write('<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Đại gia đình '+cell(branch)+'</title><style>@page{size:A4 landscape;margin:8mm}*{box-sizing:border-box}body{margin:0;background:#f8f2e5;color:#38291d;font-family:"Times New Roman",serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}.frame{position:relative;min-height:100%;border:2px solid #a98239;padding:7mm 8mm;background:#fffdf7}.frame:before{content:"❦";position:absolute;inset:3mm;border:1px solid #d8bd7c;pointer-events:none;color:#a98239;font-size:22px;line-height:1;text-align:left;padding:2mm}.frame:after{content:"❦";position:absolute;top:1mm;left:50%;transform:translateX(-50%);padding:0 12px;background:#fffdf7;color:#a98239;font-size:24px}.frame{outline:1px solid #d8bd7c;outline-offset:-5mm}.head{text-align:center;padding:4mm 0 5mm;border-bottom:1px solid #d9c18a;margin-bottom:5mm}.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#96702e;margin:0 0 3mm}.head h1{font-family:Georgia,"Times New Roman",serif;font-size:27px;letter-spacing:2px;color:#702414;text-transform:uppercase;margin:0}.head h2{font-size:19px;letter-spacing:1px;color:#8c5d24;text-transform:uppercase;margin:3mm 0 2mm}.head p{font-size:11px;margin:0;color:#735f48}.legend{display:flex;justify-content:center;gap:8mm;margin-top:3mm;font-size:10px}.legend span{display:inline-flex;align-items:center;gap:5px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%}.dot.alive{background:#487b59}.dot.dead{background:#9b4939}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4mm;align-items:stretch}.member{position:relative;min-height:37mm;padding:4mm 4mm 3mm;border:1px solid #d8c69e;border-radius:2mm;background:#fffefa;break-inside:avoid;page-break-inside:avoid;overflow:hidden}.member:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2.2mm;background:#6b9a73}.member.dead:before{background:#a55a49}.member.elder{grid-column:span 2;border:1.5px solid #b58a3c;background:#fff8e9}.member.elder:before{background:#a98239}.card-top{display:flex;justify-content:space-between;align-items:center;gap:3px;margin-bottom:2mm}.serial{font-size:12px;color:#a17d3d;letter-spacing:1px}.state{font-family:Arial,sans-serif;font-size:11px;letter-spacing:.7px;color:#487b59;font-weight:bold}.dead .state{color:#9b4939}h3{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.2;color:#3b281c;text-align:center;margin:0 0 1.5mm}.elder h3{font-size:24px;color:#702414}.relation{text-align:center;font-size:14px;color:#92703d;font-style:italic}.ornament{text-align:center;color:#b9954c;font-size:16px;margin:1mm 0}.detail{text-align:center;font-size:14px;line-height:1.5;color:#51402e;font-weight:600}.death{text-align:center;font-size:14px;line-height:1.5;color:#8b3025;font-weight:bold;margin-top:1.5mm}.age{text-align:center;font-size:14px;color:#376b48;font-weight:bold;margin-top:1.5mm}.foot{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #d9c18a;margin-top:5mm;padding-top:2.5mm;font-size:9px;color:#846b45}.foot .copy{font-style:normal}.foot .date{white-space:nowrap}@media screen{body{padding:18px;background:#e9dfcd}.frame{max-width:100%;min-height:90vh}button{font:bold 14px Arial,sans-serif;padding:10px 18px;margin:0 0 14px;border:0;border-radius:6px;background:#702414;color:white;cursor:pointer}}@media print{body{background:#fff}.frame{min-height:0}.member{box-shadow:none}}</style></head><body><button onclick="window.print()">In / Lưu PDF</button><main class="frame"><header class="head"><p class="kicker">Gia phả • Cội nguồn • Kết nối các thế hệ</p><h1>Gia phả dòng họ Nguyễn Đình</h1><h2>Đại gia đình '+cell(branch).toUpperCase()+'</h2><p>Danh sách '+data.length+' thành viên • Lưu giữ truyền thống và tình thân</p></header><section class="cards">'+cards+'</section><footer class="foot"><span class="copy">Quyền tác giả © 2026 Nguyễn Đình Kiên</span><span>Gia phả lưu truyền trong dòng họ</span><span class="date">Ngày in: '+new Date().toLocaleDateString('vi-VN')+'</span></footer></main><script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>');w.document.close()};
+document.getElementById('printBranchBtn').onclick=()=>{const branch=document.getElementById('branch').value;if(!branch)return alert('Hãy chọn Gia đình trước khi in đại gia đình.');const data=branch==='__LIEM__'?members.filter(belongsToLiemFamily):members.filter(m=>m.branch===branch);if(!data.length)return alert('Không có thành viên thuộc gia đình này.');const cell=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const status=m=>calcStatus(m)==='Đã mất'?'dead':'alive';const cards=data.map((m,i)=>{const dead=status(m)==='dead';const birth=[m.birthSolar?('Sinh '+formatSolar(m.birthSolar)):'',m.birthLunar?('Âm lịch '+m.birthLunar):''].filter(Boolean).join(' • ');const death=dead?[m.deathSolar?('Mất '+formatSolar(m.deathSolar)):'',m.deathLunar?('Âm lịch '+m.deathLunar):'',calcAgeText(m)||''].filter(Boolean).join(' • '):'';return `<article class="member ${dead?'dead':'alive'} ${/gia trưởng|gđ ông|trưởng/i.test(m.relation||'')?'elder':''}"><div class="card-top"><span class="serial">${String(i+1).padStart(2,'0')}</span><span class="state">${dead?'✦ ĐÃ KHUẤT':''}</span></div><h3>${cell(m.name)}</h3><div class="relation">${cell(m.relation||'Thành viên')}</div><div class="ornament">❦</div>${birth?`<div class="detail">${cell(birth)}</div>`:''}${dead?`<div class="death">${cell(death)}</div>`:`<div class="age">${cell(calcAgeText(m)||'')}</div>`}</article>`}).join('');const w=window.open('','_blank');if(!w)return alert('Trình duyệt đang chặn cửa sổ in. Hãy cho phép cửa sổ bật lên rồi thử lại.');w.document.write('<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Đại gia đình '+cell(branch)+'</title><style>@page{size:A4 landscape;margin:8mm}*{box-sizing:border-box}body{margin:0;background:#f8f2e5;color:#38291d;font-family:"Times New Roman",serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}.frame{position:relative;min-height:100%;border:2px solid #a98239;padding:7mm 8mm;background:#fffdf7}.frame:before{content:"❦";position:absolute;inset:3mm;border:1px solid #d8bd7c;pointer-events:none;color:#a98239;font-size:22px;line-height:1;text-align:left;padding:2mm}.frame:after{content:"❦";position:absolute;top:1mm;left:50%;transform:translateX(-50%);padding:0 12px;background:#fffdf7;color:#a98239;font-size:24px}.frame{outline:1px solid #d8bd7c;outline-offset:-5mm}.head{text-align:center;padding:4mm 0 5mm;border-bottom:1px solid #d9c18a;margin-bottom:5mm}.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#96702e;margin:0 0 3mm}.head h1{font-family:Georgia,"Times New Roman",serif;font-size:27px;letter-spacing:2px;color:#702414;text-transform:uppercase;margin:0}.head h2{font-size:19px;letter-spacing:1px;color:#8c5d24;text-transform:uppercase;margin:3mm 0 2mm}.head p{font-size:11px;margin:0;color:#735f48}.legend{display:flex;justify-content:center;gap:8mm;margin-top:3mm;font-size:10px}.legend span{display:inline-flex;align-items:center;gap:5px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%}.dot.alive{background:#487b59}.dot.dead{background:#9b4939}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4mm;align-items:stretch}.member{position:relative;min-height:37mm;padding:4mm 4mm 3mm;border:1px solid #d8c69e;border-radius:2mm;background:#fffefa;break-inside:avoid;page-break-inside:avoid;overflow:hidden}.member:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2.2mm;background:#6b9a73}.member.dead:before{background:#a55a49}.member.elder{grid-column:span 2;border:1.5px solid #b58a3c;background:#fff8e9}.member.elder:before{background:#a98239}.card-top{display:flex;justify-content:space-between;align-items:center;gap:3px;margin-bottom:2mm}.serial{font-size:12px;color:#a17d3d;letter-spacing:1px}.state{font-family:Arial,sans-serif;font-size:11px;letter-spacing:.7px;color:#487b59;font-weight:bold}.dead .state{color:#9b4939}h3{font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.2;color:#3b281c;text-align:center;margin:0 0 1.5mm}.elder h3{font-size:24px;color:#702414}.relation{text-align:center;font-size:14px;color:#92703d;font-style:italic}.ornament{text-align:center;color:#b9954c;font-size:16px;margin:1mm 0}.detail{text-align:center;font-size:14px;line-height:1.5;color:#51402e;font-weight:600}.death{text-align:center;font-size:14px;line-height:1.5;color:#8b3025;font-weight:bold;margin-top:1.5mm}.age{text-align:center;font-size:14px;color:#376b48;font-weight:bold;margin-top:1.5mm}.foot{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #d9c18a;margin-top:5mm;padding-top:2.5mm;font-size:9px;color:#846b45}.foot .copy{font-style:normal}.foot .date{white-space:nowrap}@media screen{body{padding:18px;background:#e9dfcd}.frame{max-width:100%;min-height:90vh}button{font:bold 14px Arial,sans-serif;padding:10px 18px;margin:0 0 14px;border:0;border-radius:6px;background:#702414;color:white;cursor:pointer}}@media print{body{background:#fff}.frame{min-height:0}.member{box-shadow:none}}</style></head><body><button onclick="window.print()">In / Lưu PDF</button><main class="frame"><header class="head"><p class="kicker">Gia phả • Cội nguồn • Kết nối các thế hệ</p><h1>Gia phả dòng họ Nguyễn Đình</h1><h2>Đại gia đình '+cell(branch).toUpperCase()+'</h2><p>Danh sách '+data.length+' thành viên • Lưu giữ truyền thống và tình thân</p></header><section class="cards">'+cards+'</section><footer class="foot"><span class="copy">Quyền tác giả © 2026 Nguyễn Đình Kiên</span><span>Gia phả lưu truyền trong dòng họ</span><span class="date">Ngày in: '+new Date().toLocaleDateString('vi-VN')+'</span></footer></main><script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script>
+<style id="v29-mobile-sticky-navigation">
+/* V29: Keep the primary navigation pinned to the top while the page scrolls on iPhone. */
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: clip !important;
+  }
+  body {
+    overflow-y: visible !important;
+  }
+  #nav {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+    background: linear-gradient(#941e0e,#650e05) !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  #nav button {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+}
+</style>
+
+</body></html>');w.document.close()};
 function download(name,content,type){let a=document.createElement('a'),url=URL.createObjectURL(new Blob([content],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 document.getElementById('jsonBtn').onclick=()=>download('Sao_luu_gia_pha_Nguyen_Dinh.json',JSON.stringify({app:'Gia phả dòng họ Nguyễn Đình',version:3,exportedAt:new Date().toISOString(),members:members.map(normalizeMember),cemeteries,tasks,familyEvents:familyEventsRead()},null,2),'application/json;charset=utf-8');
 document.getElementById('restoreBtn').onclick=()=>{document.getElementById('fileInput').dataset.mode='json';document.getElementById('fileInput').click()};document.getElementById('importBtn').onclick=()=>{document.getElementById('fileInput').dataset.mode='csv';document.getElementById('fileInput').click()};
@@ -1987,7 +2020,40 @@ document.getElementById('exportBookBtn').addEventListener('click',()=>{
   <section class="page"><h1>DANH SÁCH CÁC CHI HỌ</h1><table><thead><tr><th>STT</th><th>Tên chi họ</th><th>Số thành viên</th></tr></thead><tbody>${branchRows}</tbody></table></section>
   <section class="section"><h1>DANH SÁCH THÀNH VIÊN</h1><p class="note">Sắp xếp theo thứ tự thành viên trong phần mềm</p><table><thead><tr><th>STT</th><th>Họ và tên</th><th>Quan hệ</th><th>Chi họ</th><th>Ngày sinh DL</th><th>Ngày sinh AL</th><th>Can chi sinh</th><th>Ngày mất DL</th><th>Ngày mất AL</th><th>Can chi mất</th><th>Tuổi</th><th>Trạng thái</th></tr></thead><tbody>${rows}</tbody></table></section>
   ${cemeteryRows?`<section class="section"><h1>SỔ QUẢN LÝ MỘ PHẦN</h1><table><thead><tr><th>STT</th><th>Họ tên</th><th>Năm mất</th><th>Vị trí mộ</th><th>Ghi chú</th></tr></thead><tbody>${cemeteryRows}</tbody></table></section>`:''}
-  <p class="footer">Bản lưu truyền nội bộ dòng họ Nguyễn Đình</p><script>window.onload=()=>setTimeout(()=>window.print(),500);<\/script></body></html>`);
+  <p class="footer">Bản lưu truyền nội bộ dòng họ Nguyễn Đình</p><script>window.onload=()=>setTimeout(()=>window.print(),500);<\/script>
+<style id="v29-mobile-sticky-navigation">
+/* V29: Keep the primary navigation pinned to the top while the page scrolls on iPhone. */
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: clip !important;
+  }
+  body {
+    overflow-y: visible !important;
+  }
+  #nav {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+    background: linear-gradient(#941e0e,#650e05) !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  #nav button {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+}
+</style>
+
+</body></html>`);
   w.document.close();
 });
 
@@ -2222,4 +2288,37 @@ function renderMusic(){const list=document.getElementById('musicList');if(!list)
  setTimeout(measure,0);
 })();
 </script>
+
+<style id="v29-mobile-sticky-navigation">
+/* V29: Keep the primary navigation pinned to the top while the page scrolls on iPhone. */
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: clip !important;
+  }
+  body {
+    overflow-y: visible !important;
+  }
+  #nav {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+    background: linear-gradient(#941e0e,#650e05) !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  #nav button {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+}
+</style>
+
 </body></html>
