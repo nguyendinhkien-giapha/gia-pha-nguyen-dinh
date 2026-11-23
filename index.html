@@ -1286,6 +1286,58 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 #musicPanel #musicList { display:block !important; width:100% !important; }
 #musicPanel #musicList .feature-card { margin:10px 0 !important; }
 </style>
+
+<style id="v27-mobile-sticky-nav-and-two-column-filters">
+/* V27: keep the primary navigation pinned while scrolling on phones. */
+@media screen and (max-width: 768px) {
+  #nav {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    isolation: isolate !important;
+    background: linear-gradient(#941e0e,#650e05) !important;
+    margin-top: 0 !important;
+    scroll-margin-top: 0 !important;
+  }
+  /* Six filter controls in exactly three rows, two controls per row. */
+  #memberFilterControls:not(.mobile-filter-collapsed) {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 9px !important;
+    row-gap: 9px !important;
+    align-items: end !important;
+  }
+  #memberFilterControls > label {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    gap: 5px !important;
+  }
+  #memberFilterControls > label select,
+  #memberFilterControls > label input {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    min-height: 42px !important;
+    font-size: 14px !important;
+  }
+  #memberFilterControls > #resetBtn {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    margin: 2px 0 0 !important;
+    min-height: 44px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  #memberFilterControls:not(.mobile-filter-collapsed) { column-gap: 6px !important; row-gap: 7px !important; }
+  #memberFilterControls > label { font-size: 11px !important; }
+  #memberFilterControls > label select { font-size: 12px !important; padding: 7px 5px !important; }
+}
+</style>
+
 </head>
 <style id="cemetery-photo-lightbox">
 .cem-photo-viewer{position:fixed;inset:0;z-index:99999;background:rgba(20,12,8,.92);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:58px 18px 24px;box-sizing:border-box}.cem-photo-viewer[hidden]{display:none!important}.cem-photo-viewer img{display:block;max-width:min(96vw,1400px);max-height:calc(100vh - 115px);width:auto;height:auto;object-fit:contain;border-radius:8px;box-shadow:0 8px 36px #0008}.cem-photo-close{position:absolute;right:18px;top:14px;width:44px;height:44px;border:0;border-radius:50%;background:#8b3020;color:#fff;font-size:32px;line-height:1;cursor:pointer}.cem-photo-caption{color:#fff;text-align:center;margin-top:12px;font:14px Arial,sans-serif}
@@ -1501,8 +1553,8 @@ function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&l
 function calcStatus(m){const s=String(m.status||'').trim().toLocaleLowerCase('vi');return (m.deathSolar||m.deathLunar||s==='đã mất'||s==='đã qua đời'||s==='mất')?'Đã mất':'Living'}
 function memberAge(m){const d=parseSolarDate(m?.birthSolar);if(!d)return null;const deceased=calcStatus(m)==='Đã mất';const end=deceased?parseSolarDate(m?.deathSolar):new Date();if(!end)return null;return end.getFullYear()-d.getFullYear()+1}
 const LIEM_BRANCHES=['Nguyễn Đình Chính','Nguyễn Thái Sơn','Nguyễn Đình Long','Nguyễn Đình Hợp','Nguyễn Đình Hùng','Nguyễn Đình Chí','Nguyễn Đình Cường','Nguyễn Đình Hảo','Nguyễn Đình Dũng','Nguyễn Đình Tuấn','Nguyễn Đình Mạnh','Nguyễn Đình Tú','Nguyễn Đình Kê'];
-function belongsToLiemFamily(m){const br=String(m.branch||'').trim();const nm=String(m.name||'').trim();const gen=String(m.generation||'').replace(/[^0-9]/g,'');const rel=String(m.relation||'').trim().toLocaleLowerCase('vi');const core=['Nguyễn Đình Liêm','Đặng Thị Trinh','Đặng Thị Phúc'].includes(nm);const direct=LIEM_BRANCHES.includes(br)&&gen==='5'&&/^(con trai|con gái|vợ|chồng|con dâu|con rể)(\\s*\\(đời thứ \\d+\\))?$/i.test(rel);return core||direct}
-function filtered(){let q=document.getElementById('search').value.toLocaleLowerCase('vi'),b=document.getElementById('branch').value,month=document.getElementById('birthMonth').value,s=document.getElementById('status').value,ageMin=+document.getElementById('ageFilter').value||0,generation=document.getElementById('generationFilter')?.value||'';return members.filter(m=>{let hay=Object.values(m).join(' ').toLocaleLowerCase('vi'),age=memberAge(m),gen=String(m.generation??'').replace(/[^0-9]/g,'');return (!q||hay.includes(q))&&(!b||(b==='__LIEM__'?belongsToLiemFamily(m):m.branch===b))&&(!month||String(birthMonth(m.birthSolar))===month)&&(!s||calcStatus(m)===s)&&(!ageMin||(calcStatus(m)==='Living'&&age!==null&&age>=ageMin))&&(!generation||gen===generation)})}
+function belongsToLiemFamily(m){const br=String(m.branch||'').trim();const nm=String(m.name||'').trim();const gen=String(m.generation||'').replace(/[^0-9]/g,'');const rel=String(m.relation||'').trim().toLocaleLowerCase('vi');const core=['Nguyễn Đình Liêm','Đặng Thị Trinh','Đặng Thị Phúc','Nguyễn Thái Sơn'].includes(nm);const direct=LIEM_BRANCHES.includes(br)&&gen==='5'&&/^(con trai|con gái|vợ|chồng|con dâu|con rể)(\\s*\\(đời thứ \\d+\\))?$/i.test(rel);return core||direct}
+function filtered(){let q=document.getElementById('search').value.toLocaleLowerCase('vi'),b=document.getElementById('branch').value,month=document.getElementById('birthMonth').value,s=document.getElementById('status').value,ageMin=+document.getElementById('ageFilter').value||0,generation=document.getElementById('generationFilter')?.value||'';const data=members.filter(m=>{let hay=Object.values(m).join(' ').toLocaleLowerCase('vi'),age=memberAge(m),gen=String(m.generation??'').replace(/[^0-9]/g,'');return (!q||hay.includes(q))&&(!b||(b==='__LIEM__'?belongsToLiemFamily(m):m.branch===b))&&(!month||String(birthMonth(m.birthSolar))===month)&&(!s||calcStatus(m)===s)&&(!ageMin||(calcStatus(m)==='Living'&&age!==null&&age>=ageMin))&&(!generation||gen===generation)});if(b==='__LIEM__'){const husbandIndexes=[];for(let i=0;i<data.length;i++){if(String(data[i].name||'').trim()==='Nguyễn Thái Sơn')husbandIndexes.push(i)}if(husbandIndexes.length){const husband=data[husbandIndexes[0]];for(let i=husbandIndexes.length-1;i>=0;i--)data.splice(husbandIndexes[i],1);let oi=-1;for(let i=0;i<data.length;i++){const m=data[i];if(String(m.name||'').trim()==='Nguyễn Thị Kim Oanh'&&String(m.branch||'').trim()==='Nguyễn Thái Sơn'){oi=i;break}}if(oi<0)oi=data.findIndex(m=>String(m.name||'').trim()==='Nguyễn Thị Kim Oanh');if(oi>=0)data.splice(oi+1,0,husband);else data.push(husband)}}return data}
 function parseSolarDate(v){if(!v)return null;let m=String(v).match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(m)return new Date(+m[1],+m[2]-1,+m[3]);m=String(v).match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})$/);if(m)return new Date(+m[3],+m[2]-1,+m[1]);return null}
 function birthMonth(v){const d=parseSolarDate(v);return d?d.getMonth()+1:''}
 function birthWeekday(v){const d=parseSolarDate(v);return d?['Chủ nhật','Thứ hai','Thứ ba','Thứ tư','Thứ năm','Thứ sáu','Thứ bảy'][d.getDay()]:''}
