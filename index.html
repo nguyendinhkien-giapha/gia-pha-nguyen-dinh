@@ -1338,6 +1338,17 @@ body{width:100%;max-width:100%;min-width:0;overflow-x:hidden}
 }
 </style>
 
+
+<style id="v28-mobile-filter-hidden-and-nav-fix">
+@media screen and (max-width: 768px) {
+  #memberFilterControls[hidden], #mapFilterControls[hidden] { display:none !important; }
+  #memberFilterControls:not([hidden]) { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  #memberFilterControls > label { min-width:0 !important; width:100% !important; }
+  #nav { z-index:10000 !important; }
+  #nav.v28-nav-fixed { position:fixed !important; top:0 !important; left:0 !important; right:0 !important; width:100% !important; margin:0 !important; }
+  .v28-nav-spacer { display:block !important; width:100% !important; pointer-events:none !important; visibility:hidden !important; }
+}
+</style>
 </head>
 <style id="cemetery-photo-lightbox">
 .cem-photo-viewer{position:fixed;inset:0;z-index:99999;background:rgba(20,12,8,.92);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:58px 18px 24px;box-sizing:border-box}.cem-photo-viewer[hidden]{display:none!important}.cem-photo-viewer img{display:block;max-width:min(96vw,1400px);max-height:calc(100vh - 115px);width:auto;height:auto;object-fit:contain;border-radius:8px;box-shadow:0 8px 36px #0008}.cem-photo-close{position:absolute;right:18px;top:14px;width:44px;height:44px;border:0;border-radius:50%;background:#8b3020;color:#fff;font-size:32px;line-height:1;cursor:pointer}.cem-photo-caption{color:#fff;text-align:center;margin-top:12px;font:14px Arial,sans-serif}
@@ -1554,7 +1565,15 @@ function calcStatus(m){const s=String(m.status||'').trim().toLocaleLowerCase('vi
 function memberAge(m){const d=parseSolarDate(m?.birthSolar);if(!d)return null;const deceased=calcStatus(m)==='Đã mất';const end=deceased?parseSolarDate(m?.deathSolar):new Date();if(!end)return null;return end.getFullYear()-d.getFullYear()+1}
 const LIEM_BRANCHES=['Nguyễn Đình Chính','Nguyễn Thái Sơn','Nguyễn Đình Long','Nguyễn Đình Hợp','Nguyễn Đình Hùng','Nguyễn Đình Chí','Nguyễn Đình Cường','Nguyễn Đình Hảo','Nguyễn Đình Dũng','Nguyễn Đình Tuấn','Nguyễn Đình Mạnh','Nguyễn Đình Tú','Nguyễn Đình Kê'];
 function belongsToLiemFamily(m){const br=String(m.branch||'').trim();const nm=String(m.name||'').trim();const gen=String(m.generation||'').replace(/[^0-9]/g,'');const rel=String(m.relation||'').trim().toLocaleLowerCase('vi');const core=['Nguyễn Đình Liêm','Đặng Thị Trinh','Đặng Thị Phúc','Nguyễn Thái Sơn'].includes(nm);const direct=LIEM_BRANCHES.includes(br)&&gen==='5'&&/^(con trai|con gái|vợ|chồng|con dâu|con rể)(\\s*\\(đời thứ \\d+\\))?$/i.test(rel);return core||direct}
-function filtered(){let q=document.getElementById('search').value.toLocaleLowerCase('vi'),b=document.getElementById('branch').value,month=document.getElementById('birthMonth').value,s=document.getElementById('status').value,ageMin=+document.getElementById('ageFilter').value||0,generation=document.getElementById('generationFilter')?.value||'';const data=members.filter(m=>{let hay=Object.values(m).join(' ').toLocaleLowerCase('vi'),age=memberAge(m),gen=String(m.generation??'').replace(/[^0-9]/g,'');return (!q||hay.includes(q))&&(!b||(b==='__LIEM__'?belongsToLiemFamily(m):m.branch===b))&&(!month||String(birthMonth(m.birthSolar))===month)&&(!s||calcStatus(m)===s)&&(!ageMin||(calcStatus(m)==='Living'&&age!==null&&age>=ageMin))&&(!generation||gen===generation)});if(b==='__LIEM__'){const husbandIndexes=[];for(let i=0;i<data.length;i++){if(String(data[i].name||'').trim()==='Nguyễn Thái Sơn')husbandIndexes.push(i)}if(husbandIndexes.length){const husband=data[husbandIndexes[0]];for(let i=husbandIndexes.length-1;i>=0;i--)data.splice(husbandIndexes[i],1);let oi=-1;for(let i=0;i<data.length;i++){const m=data[i];if(String(m.name||'').trim()==='Nguyễn Thị Kim Oanh'&&String(m.branch||'').trim()==='Nguyễn Thái Sơn'){oi=i;break}}if(oi<0)oi=data.findIndex(m=>String(m.name||'').trim()==='Nguyễn Thị Kim Oanh');if(oi>=0)data.splice(oi+1,0,husband);else data.push(husband)}}return data}
+function filtered(){
+ let q=document.getElementById('search').value.toLocaleLowerCase('vi'),b=document.getElementById('branch').value,month=document.getElementById('birthMonth').value,s=document.getElementById('status').value,ageMin=+document.getElementById('ageFilter').value||0,generation=document.getElementById('generationFilter')?.value||'';
+ const data=members.filter(m=>{let hay=Object.values(m).join(' ').toLocaleLowerCase('vi'),age=memberAge(m),gen=String(m.generation??'').replace(/[^0-9]/g,'');return (!q||hay.includes(q))&&(!b||(b==='__LIEM__'?belongsToLiemFamily(m):m.branch===b))&&(!month||String(birthMonth(m.birthSolar))===month)&&(!s||calcStatus(m)===s)&&(!ageMin||(calcStatus(m)==='Living'&&age!==null&&age>=ageMin))&&(!generation||gen===generation)});
+ if(b==='__LIEM__'){
+   const husbandIndex=data.findIndex(m=>String(m.name||'').trim()==='Nguyễn Thái Sơn');
+   if(husbandIndex>=0){const husband=data.splice(husbandIndex,1)[0];const wifeIndex=data.findIndex(m=>String(m.name||'').trim()==='Nguyễn Thị Kim Oanh');if(wifeIndex>=0)data.splice(wifeIndex+1,0,husband);else data.push(husband);}
+ }
+ return data;
+}
 function parseSolarDate(v){if(!v)return null;let m=String(v).match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(m)return new Date(+m[1],+m[2]-1,+m[3]);m=String(v).match(/^(\d{1,2})[\/.-](\d{1,2})[\/.-](\d{4})$/);if(m)return new Date(+m[3],+m[2]-1,+m[1]);return null}
 function birthMonth(v){const d=parseSolarDate(v);return d?d.getMonth()+1:''}
 function birthWeekday(v){const d=parseSolarDate(v);return d?['Chủ nhật','Thứ hai','Thứ ba','Thứ tư','Thứ năm','Thứ sáu','Thứ bảy'][d.getDay()]:''}
@@ -2182,4 +2201,25 @@ async function musicDelete(id){const db=await openMusicDb();return new Promise((
 function renderMusic(){const list=document.getElementById('musicList');if(!list)return;list.innerHTML=`<article class="feature-card" style="margin:10px 0;padding:18px"><h3 style="margin:0 0 8px;color:var(--red)">🎵 Ca khúc ca ngợi dòng họ Nguyễn Đình</h3><p class="notice" style="margin:0 0 14px">Bài hát chính thức của dòng họ · Nghe trực tuyến</p><a class="btn" href="https://suno.com/song/85ced43a-cbf5-4945-8d95-75df873079f7?sh=nWEP4pe9h7LzjY4v" target="_blank" rel="noopener noreferrer" style="display:inline-flex;text-decoration:none">▶ Nghe bài hát trên Suno ↗</a></article>`;const count=document.getElementById('musicCount');if(count)count.textContent='01 bài hát';}
 
 
-</script></body></html>
+</script>
+<script id="v28-mobile-fixed-nav">
+(function(){
+ const nav=document.getElementById('nav'); if(!nav)return;
+ const mobile=()=>window.matchMedia('(max-width: 768px)').matches;
+ const spacer=document.createElement('div'); spacer.className='v28-nav-spacer'; spacer.setAttribute('aria-hidden','true');
+ nav.parentNode.insertBefore(spacer,nav);
+ let threshold=0;
+ function measure(){
+   nav.classList.remove('v28-nav-fixed'); spacer.style.height='0px';
+   if(!mobile())return;
+   const h=nav.offsetHeight; threshold=nav.getBoundingClientRect().top+window.scrollY; spacer.dataset.height=String(h); update();
+ }
+ function update(){ if(!mobile()){nav.classList.remove('v28-nav-fixed');spacer.style.height='0px';return;} const fixed=window.scrollY>=threshold; nav.classList.toggle('v28-nav-fixed',fixed); spacer.style.height=fixed?(spacer.dataset.height||nav.offsetHeight)+'px':'0px'; }
+ window.addEventListener('scroll',update,{passive:true});
+ window.addEventListener('resize',measure);
+ window.addEventListener('orientationchange',()=>setTimeout(measure,250));
+ window.addEventListener('load',()=>setTimeout(measure,150));
+ setTimeout(measure,0);
+})();
+</script>
+</body></html>

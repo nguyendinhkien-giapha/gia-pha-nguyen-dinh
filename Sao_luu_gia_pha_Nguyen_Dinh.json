@@ -1,13 +1,13 @@
 {
   "app": "Gia phả dòng họ Nguyễn Đình",
   "version": 3,
-  "exportedAt": "2026-11-13T14:56:26.568Z",
+  "exportedAt": "2026-11-23T08:04:09.258Z",
   "members": [
     {
       "name": "Nguyễn Đình Cung",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Kỵ tổ (đời thứ 1)",
+      "generation": "1",
+      "relation": "Kỵ tổ",
       "branch": "Nguyễn Đình Cung",
       "birthSolar": "",
       "birthLunar": "",
@@ -26,8 +26,8 @@
     {
       "name": "Nguyễn Đình Chuẩn",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Tằng tổ (đời thứ 2)",
+      "generation": "2",
+      "relation": "Cao tổ",
       "branch": "Nguyễn Đình Cung",
       "birthSolar": "",
       "birthLunar": "",
@@ -46,7 +46,7 @@
     {
       "name": "Nguyễn Thị Thanh Thần",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "2",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Cung",
       "birthSolar": "",
@@ -66,8 +66,8 @@
     {
       "name": "Nguyễn Đình Khê",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Cao tổ (đời thứ 3)",
+      "generation": "3",
+      "relation": "Tằng tổ",
       "branch": "Nguyễn Đình Chuẩn",
       "birthSolar": "",
       "birthLunar": "",
@@ -86,7 +86,7 @@
     {
       "name": "Trần Thị Tỵ",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "3",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Chuẩn",
       "birthSolar": "",
@@ -106,8 +106,8 @@
     {
       "name": "Nguyễn Đình Liêm",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Tổ (đời thứ 4)",
+      "generation": "4",
+      "relation": "Tổ",
       "branch": "Nguyễn Đình Khê",
       "birthSolar": "",
       "birthLunar": "",
@@ -126,7 +126,7 @@
     {
       "name": "Đặng Thị Trinh",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "4",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Khê",
       "birthSolar": "",
@@ -146,7 +146,7 @@
     {
       "name": "Đặng Thị Phúc",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "4",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Khê",
       "birthSolar": "",
@@ -166,8 +166,8 @@
     {
       "name": "Nguyễn Đình Chính",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Con trai (đời thứ 5)",
+      "generation": "5",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "",
       "birthLunar": "",
@@ -185,6 +185,8 @@
     },
     {
       "name": "Trần Kim Hòa",
+      "gender": "Nữ",
+      "generation": "5",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "1952-05-20",
@@ -193,11 +195,13 @@
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
-      "age": "74 tuổi",
+      "age": "75 tuổi",
       "status": "Living",
-      "id": "csv_1793419822865_9",
       "hometown": "",
-      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "burialPlace": "",
+      "notes": "",
+      "id": "csv_1793419822865_9"
     },
     {
       "name": "Nguyễn Đình Thắng",
@@ -213,7 +217,8 @@
       "status": "Living",
       "id": "csv_1793419822865_10",
       "hometown": "",
-      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Dương Phương Lan",
@@ -229,12 +234,13 @@
       "status": "Living",
       "id": "csv_1793419822865_11",
       "hometown": "",
-      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Quỳnh Trang",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "7",
       "relation": "Cháu gái",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "1997-01-19",
@@ -254,7 +260,7 @@
     {
       "name": "Lê Lệnh Tùng",
       "gender": "Nam",
-      "generation": "",
+      "generation": "7",
       "relation": "Cháu rể",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "1993-10-15",
@@ -274,7 +280,7 @@
     {
       "name": "Lê Lệnh Hưng",
       "gender": "Nam",
-      "generation": "",
+      "generation": "8",
       "relation": "Chắt trai",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "2020-08-04",
@@ -294,7 +300,7 @@
     {
       "name": "Lê Lệnh Huy",
       "gender": "Nam",
-      "generation": "",
+      "generation": "8",
       "relation": "Chắt trai",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "2024-06-16",
@@ -325,7 +331,8 @@
       "status": "Living",
       "id": "csv_1793419822865_12",
       "hometown": "",
-      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Kim Ngân",
@@ -341,31 +348,12 @@
       "status": "Living",
       "id": "csv_1793419822865_13",
       "hometown": "",
-      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
-    },
-    {
-      "name": "Nguyễn Thái Sơn",
-      "gender": "Nam",
-      "generation": "",
-      "relation": "Con rể",
-      "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "1948-10-24",
-      "birthLunar": "22/09/1948",
-      "birthCanChi": "🐭 Mậu Tý",
-      "deathSolar": "2025-01-06",
-      "deathLunar": "07/12/2024",
-      "deathCanChi": "Giáp Thìn",
-      "age": "Hưởng thọ 76 tuổi",
-      "status": "Đã mất",
-      "hometown": "",
-      "currentLocation": "",
-      "burialPlace": "Nghĩa trang Ao Đẫu, xã Hữu Lũng, tỉnh Lạng Sơn",
-      "notes": "",
-      "id": "csv_1793419822865_14"
+      "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Thị Kim Oanh",
-      "relation": "Con gái (đời thứ 5)",
+      "relation": "Con gái",
       "branch": "Nguyễn Thái Sơn",
       "birthSolar": "1951-08-17",
       "birthLunar": "15/07/1951",
@@ -377,7 +365,28 @@
       "status": "Living",
       "id": "csv_1793419822865_15",
       "hometown": "",
-      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
+    },
+    {
+      "name": "Nguyễn Thái Sơn",
+      "gender": "Nam",
+      "generation": "5",
+      "relation": "Con rể",
+      "branch": "Nguyễn Thái Sơn",
+      "birthSolar": "1948-10-24",
+      "birthLunar": "22/09/1948",
+      "birthCanChi": "🐭 Mậu Tý",
+      "deathSolar": "2025-01-06",
+      "deathLunar": "07/12/2024",
+      "deathCanChi": "Giáp Thìn",
+      "age": "Hưởng thọ 78 tuổi",
+      "status": "Đã mất",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "Nghĩa trang Ao Đẫu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "notes": "",
+      "id": "csv_1793419822865_14"
     },
     {
       "name": "Nguyễn Ngọc Tùng",
@@ -393,7 +402,8 @@
       "status": "Living",
       "id": "csv_1793419822865_16",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Lê Thị Minh Nguyệt",
@@ -409,7 +419,8 @@
       "status": "Living",
       "id": "csv_1793419822865_17",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Lê Minh",
@@ -425,7 +436,8 @@
       "status": "Living",
       "id": "csv_1793419822865_18",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Lê Minh Châu",
@@ -441,12 +453,13 @@
       "status": "Living",
       "id": "csv_1793419822865_19",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Ngọc Thạch",
       "gender": "Nam",
-      "generation": "",
+      "generation": "6",
       "relation": "Con trai",
       "branch": "Nguyễn Thái Sơn",
       "birthSolar": "1975-05-07",
@@ -477,7 +490,8 @@
       "status": "Living",
       "id": "csv_1793419822865_21",
       "hometown": "",
-      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Chu Văn Vượng",
@@ -493,7 +507,8 @@
       "status": "Living",
       "id": "csv_1793419822865_22",
       "hometown": "",
-      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Chu Mai Ngọc",
@@ -509,7 +524,8 @@
       "status": "Living",
       "id": "csv_1793419822865_23",
       "hometown": "",
-      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Chu Tùng Lâm",
@@ -525,7 +541,8 @@
       "status": "Living",
       "id": "csv_1793419822865_24",
       "hometown": "",
-      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Chu Ngọc Thịnh",
@@ -541,7 +558,8 @@
       "status": "Living",
       "id": "csv_1793419822865_25",
       "hometown": "",
-      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 01 Đường Chi Lăng, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Ngọc Tùng Thụ",
@@ -557,12 +575,13 @@
       "status": "Living",
       "id": "csv_1793419822865_26",
       "hometown": "",
-      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Đinh Thị Mùa",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "6",
       "relation": "Con dâu",
       "branch": "Nguyễn Thái Sơn",
       "birthSolar": "1986-02-18",
@@ -593,7 +612,8 @@
       "status": "Living",
       "id": "csv_1793419822865_28",
       "hometown": "",
-      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Ngọc Bảo",
@@ -609,13 +629,14 @@
       "status": "Living",
       "id": "csv_1793419822865_29",
       "hometown": "",
-      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Long",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Con trai (đời thứ 5)",
+      "generation": "5",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Long",
       "birthSolar": "1954-04-30",
       "birthLunar": "28/03/1954",
@@ -645,7 +666,8 @@
       "status": "Living",
       "id": "csv_1793419822865_31",
       "hometown": "",
-      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Lân",
@@ -661,7 +683,8 @@
       "status": "Living",
       "id": "csv_1793419822865_32",
       "hometown": "",
-      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Lương Thị Dung",
@@ -677,7 +700,8 @@
       "status": "Living",
       "id": "csv_1793419822865_33",
       "hometown": "",
-      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Bảo Trân",
@@ -693,7 +717,8 @@
       "status": "Living",
       "id": "csv_1793419822865_34",
       "hometown": "",
-      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Thiên Vũ",
@@ -709,7 +734,8 @@
       "status": "Living",
       "id": "csv_1793419822865_35",
       "hometown": "",
-      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Bảo Ngọc",
@@ -725,7 +751,8 @@
       "status": "Living",
       "id": "csv_1793419822865_36",
       "hometown": "",
-      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 08, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Thị Bích Liên",
@@ -741,7 +768,8 @@
       "status": "Living",
       "id": "csv_1793419822865_37",
       "hometown": "",
-      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Nam Hiếu",
@@ -757,7 +785,8 @@
       "status": "Living",
       "id": "csv_1793419822865_38",
       "hometown": "",
-      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Ngọc Hân",
@@ -773,7 +802,8 @@
       "status": "Living",
       "id": "csv_1793419822865_39",
       "hometown": "",
-      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Thái Hòa",
@@ -789,13 +819,34 @@
       "status": "Living",
       "id": "csv_1793419822865_40",
       "hometown": "",
-      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 12A, ngõ 96 đường Ba Đình, thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
+    },
+    {
+      "name": "Nguyễn Hải Đăng",
+      "gender": "Nam",
+      "generation": "Đời thứ 7",
+      "relation": "Cháu trai",
+      "branch": "Nguyễn Đình Long",
+      "birthSolar": "2026-11-01",
+      "birthLunar": "23/09/2026",
+      "birthCanChi": "🐴 Bính Ngọ",
+      "deathSolar": "",
+      "deathLunar": "",
+      "deathCanChi": "",
+      "age": "1 tuổi",
+      "status": "Living",
+      "hometown": "",
+      "currentLocation": "",
+      "burialPlace": "",
+      "notes": "",
+      "id": "nd_1795322763225_xfyou"
     },
     {
       "name": "Nguyễn Đình Hợp",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Con trai (đời thứ 5)",
+      "generation": "5",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Hợp",
       "birthSolar": "1956-10-10",
       "birthLunar": "07/09/1956",
@@ -825,7 +876,8 @@
       "status": "Living",
       "id": "csv_1793419822865_42",
       "hometown": "",
-      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Kiên",
@@ -841,7 +893,8 @@
       "status": "Living",
       "id": "csv_1793419822865_43",
       "hometown": "",
-      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Đoàn Thị Hường",
@@ -857,7 +910,8 @@
       "status": "Living",
       "id": "csv_1793419822865_44",
       "hometown": "",
-      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Khôi Nguyên",
@@ -873,7 +927,8 @@
       "status": "Living",
       "id": "csv_1793419822865_45",
       "hometown": "",
-      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 87 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Thị Thùy Chi",
@@ -889,7 +944,8 @@
       "status": "Living",
       "id": "csv_1793419822865_46",
       "hometown": "",
-      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Chu Văn Nhật",
@@ -905,7 +961,8 @@
       "status": "Living",
       "id": "csv_1793419822865_47",
       "hometown": "",
-      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Chu Đức Trọng",
@@ -921,7 +978,8 @@
       "status": "Living",
       "id": "csv_1793419822865_48",
       "hometown": "",
-      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Chu Ngọc Bích",
@@ -937,7 +995,8 @@
       "status": "Living",
       "id": "csv_1793419822865_49",
       "hometown": "",
-      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Na Hoa, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Thị Thùy Linh",
@@ -953,7 +1012,8 @@
       "status": "Living",
       "id": "csv_1793419822865_50",
       "hometown": "",
-      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Bùi Đỗ Trường",
@@ -969,7 +1029,8 @@
       "status": "Living",
       "id": "csv_1793419822865_51",
       "hometown": "",
-      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Bùi Tường An",
@@ -985,7 +1046,8 @@
       "status": "Living",
       "id": "csv_1793419822865_52",
       "hometown": "",
-      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Bùi Đỗ Quang Anh",
@@ -1001,7 +1063,8 @@
       "status": "Living",
       "id": "csv_1793419822866_53",
       "hometown": "",
-      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Bùi Ngọc Châu Anh",
@@ -1017,11 +1080,12 @@
       "status": "Living",
       "id": "csv_1793419822866_54",
       "hometown": "",
-      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn"
+      "currentLocation": "Ngõ 71, Đường Xương Giang, Xã Hữu Lũng, Tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Hùng",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Hùng",
       "birthSolar": "1960-07-14",
       "birthLunar": "21/06/1960",
@@ -1033,7 +1097,8 @@
       "status": "Living",
       "id": "csv_1793419822866_55",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Phạm Thị Lịch",
@@ -1049,7 +1114,8 @@
       "status": "Living",
       "id": "csv_1793419822866_56",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Thiệp",
@@ -1065,7 +1131,8 @@
       "status": "Living",
       "id": "csv_1793419822866_57",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Lương Thị Vân",
@@ -1081,7 +1148,8 @@
       "status": "Living",
       "id": "csv_1793419822866_58",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đình Lương Đạt",
@@ -1097,7 +1165,8 @@
       "status": "Living",
       "id": "csv_1793419822866_59",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Điền Kim",
@@ -1113,7 +1182,8 @@
       "status": "Living",
       "id": "csv_1793419822866_60",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Thị Thảo",
@@ -1129,7 +1199,8 @@
       "status": "Living",
       "id": "csv_1793419822866_61",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Hứa Minh Hải",
@@ -1145,7 +1216,8 @@
       "status": "Living",
       "id": "csv_1793419822866_62",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Hứa Hà Vy",
@@ -1161,7 +1233,8 @@
       "status": "Living",
       "id": "csv_1793419822866_63",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Hứa Tuệ Minh",
@@ -1177,7 +1250,8 @@
       "status": "Living",
       "id": "csv_1793419822866_64",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Hứa An Nhiên",
@@ -1193,7 +1267,8 @@
       "status": "Living",
       "id": "csv_1793419822866_65",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Hứa Đức Phúc",
@@ -1209,11 +1284,12 @@
       "status": "Living",
       "id": "csv_1793419822866_66",
       "hometown": "",
-      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 93 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Chí",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Chí",
       "birthSolar": "1957-07-30",
       "birthLunar": "04/07/1957",
@@ -1225,7 +1301,8 @@
       "status": "Living",
       "id": "csv_1793419822866_67",
       "hometown": "",
-      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Thị Yến",
@@ -1241,7 +1318,8 @@
       "status": "Living",
       "id": "csv_1793419822866_68",
       "hometown": "",
-      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Ngọc Quỳnh",
@@ -1257,7 +1335,8 @@
       "status": "Living",
       "id": "csv_1793419822866_69",
       "hometown": "",
-      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội"
+      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Phong",
@@ -1273,7 +1352,8 @@
       "status": "Living",
       "id": "csv_1793419822866_70",
       "hometown": "",
-      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội"
+      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Minh Khang",
@@ -1289,7 +1369,8 @@
       "status": "Living",
       "id": "csv_1793419822866_71",
       "hometown": "",
-      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội"
+      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Ngọc Minh Châu",
@@ -1305,7 +1386,8 @@
       "status": "Living",
       "id": "csv_1793419822866_72",
       "hometown": "",
-      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội"
+      "currentLocation": "Tổ 12, phường Long Biên, Tp Hà Nội",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Quang",
@@ -1321,7 +1403,8 @@
       "status": "Living",
       "id": "csv_1793419822866_73",
       "hometown": "",
-      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Lương Thị Diễm",
@@ -1337,7 +1420,8 @@
       "status": "Living",
       "id": "csv_1793419822866_74",
       "hometown": "",
-      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Hải Đăng",
@@ -1353,7 +1437,8 @@
       "status": "Living",
       "id": "csv_1793419822866_75",
       "hometown": "",
-      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Trọng",
@@ -1369,13 +1454,14 @@
       "status": "Living",
       "id": "csv_1793419822866_76",
       "hometown": "",
-      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 04, ngõ 107 đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Cường",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Con trai (đời thứ 5)",
+      "generation": "5",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Cường",
       "birthSolar": "1961-04-15",
       "birthLunar": "01/03/1961",
@@ -1405,7 +1491,8 @@
       "status": "Living",
       "id": "csv_1793419822866_78",
       "hometown": "",
-      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Thị Vân",
@@ -1421,7 +1508,8 @@
       "status": "Living",
       "id": "csv_1793419822866_79",
       "hometown": "",
-      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Phạm Văn Trung",
@@ -1437,7 +1525,8 @@
       "status": "Living",
       "id": "csv_1793419822866_80",
       "hometown": "",
-      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Phạm Ngọc Mai",
@@ -1453,7 +1542,8 @@
       "status": "Living",
       "id": "csv_1793419822866_81",
       "hometown": "",
-      "currentLocation": ""
+      "currentLocation": "",
+      "generation": "7"
     },
     {
       "name": "Phạm Lam phong",
@@ -1469,7 +1559,8 @@
       "status": "Living",
       "id": "csv_1793419822866_82",
       "hometown": "",
-      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Gia Huy",
@@ -1485,12 +1576,13 @@
       "status": "Living",
       "id": "csv_1793419822866_83",
       "hometown": "",
-      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 01, ngõ 122, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "8"
     },
     {
       "name": "Nguyễn Thị Bình",
       "gender": "Nữ",
-      "generation": "",
+      "generation": "6",
       "relation": "Con gái",
       "branch": "Nguyễn Đình Cường",
       "birthSolar": "1987-08-08",
@@ -1521,7 +1613,8 @@
       "status": "Living",
       "id": "csv_1793419822866_85",
       "hometown": "",
-      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Đỗ Nam Khánh",
@@ -1537,7 +1630,8 @@
       "status": "Living",
       "id": "csv_1793419822866_86",
       "hometown": "",
-      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Đỗ Trình Anh",
@@ -1553,7 +1647,8 @@
       "status": "Living",
       "id": "csv_1793419822866_87",
       "hometown": "",
-      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Đỗ Diệu Anh",
@@ -1569,13 +1664,14 @@
       "status": "Living",
       "id": "csv_1793419822866_88",
       "hometown": "",
-      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 311, đường Bắc Sơn, thôn Cầu 10, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Hảo",
       "gender": "Nam",
-      "generation": "",
-      "relation": "Con trai (đời thứ 5)",
+      "generation": "5",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Hảo",
       "birthSolar": "1963-12-30",
       "birthLunar": "15/11/1963",
@@ -1605,7 +1701,8 @@
       "status": "Living",
       "id": "csv_1793419822866_90",
       "hometown": "",
-      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Chung",
@@ -1621,7 +1718,8 @@
       "status": "Living",
       "id": "csv_1793419822866_91",
       "hometown": "",
-      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Hoàng Hải Nhâm",
@@ -1637,7 +1735,8 @@
       "status": "Living",
       "id": "csv_1793419822866_92",
       "hometown": "",
-      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đình Huy",
@@ -1653,7 +1752,8 @@
       "status": "Living",
       "id": "csv_1793419822866_93",
       "hometown": "",
-      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Hoàng Minh",
@@ -1669,7 +1769,8 @@
       "status": "Living",
       "id": "csv_1793419822866_94",
       "hometown": "",
-      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 10, ngõ 96, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Đức",
@@ -1685,7 +1786,8 @@
       "status": "Living",
       "id": "csv_1793419822866_95",
       "hometown": "",
-      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Hoàng Thị Quân",
@@ -1701,7 +1803,8 @@
       "status": "Living",
       "id": "csv_1793419822866_96",
       "hometown": "",
-      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Hoàng Anh",
@@ -1717,7 +1820,8 @@
       "status": "Living",
       "id": "csv_1793419822866_97",
       "hometown": "",
-      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Hoàng Đan",
@@ -1733,11 +1837,12 @@
       "status": "Living",
       "id": "csv_1793419822866_98",
       "hometown": "",
-      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 04, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Dũng",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Dũng",
       "birthSolar": "1967-01-01",
       "birthLunar": "21/11/1966",
@@ -1749,7 +1854,8 @@
       "status": "Living",
       "id": "csv_1793419822866_99",
       "hometown": "",
-      "currentLocation": "Số nhà 07, Ngõ 122, đường Ba Đình, thôn Na Đâu. xã Hữu Lũng. tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 07, Ngõ 122, đường Ba Đình, thôn Na Đâu. xã Hữu Lũng. tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Phí Thị Ngân",
@@ -1765,7 +1871,8 @@
       "status": "Living",
       "id": "csv_1793419822866_100",
       "hometown": "",
-      "currentLocation": "Số nhà 07, Ngõ 122, đường Ba Đình, thôn Na Đâu. xã Hữu Lũng. tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 07, Ngõ 122, đường Ba Đình, thôn Na Đâu. xã Hữu Lũng. tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Thị Huyền Giang",
@@ -1781,7 +1888,8 @@
       "status": "Living",
       "id": "csv_1793419822866_101",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đăng Toàn",
@@ -1797,7 +1905,8 @@
       "status": "Living",
       "id": "csv_1793419822866_102",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Anh Thư",
@@ -1813,7 +1922,8 @@
       "status": "Living",
       "id": "csv_1793419822866_103",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đăng Quang",
@@ -1829,7 +1939,8 @@
       "status": "Living",
       "id": "csv_1793419822866_104",
       "hometown": "",
-      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Đường 19/8, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Thị Bích Ngọc",
@@ -1845,7 +1956,8 @@
       "status": "Living",
       "id": "csv_1793419822866_105",
       "hometown": "",
-      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Lưu Tiến Điệp",
@@ -1861,7 +1973,8 @@
       "status": "Living",
       "id": "csv_1793419822866_106",
       "hometown": "",
-      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Lưu Anh Duy",
@@ -1877,7 +1990,8 @@
       "status": "Living",
       "id": "csv_1793419822866_107",
       "hometown": "",
-      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Lưu Anh Quân",
@@ -1893,11 +2007,12 @@
       "status": "Living",
       "id": "csv_1793419822866_108",
       "hometown": "",
-      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Thôn Tân Lập, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Đình Tuấn",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Tuấn",
       "birthSolar": "1971-01-11",
       "birthLunar": "15/12/1970",
@@ -1909,7 +2024,8 @@
       "status": "Living",
       "id": "csv_1793419822866_109",
       "hometown": "",
-      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh"
+      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Thị Mai Thu",
@@ -1925,7 +2041,8 @@
       "status": "Living",
       "id": "csv_1793419822866_110",
       "hometown": "",
-      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh"
+      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Tiến",
@@ -1941,7 +2058,8 @@
       "status": "Living",
       "id": "csv_1793419822866_111",
       "hometown": "",
-      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh"
+      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đình Đạt",
@@ -1957,11 +2075,12 @@
       "status": "Living",
       "id": "csv_1793419822866_112",
       "hometown": "",
-      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh"
+      "currentLocation": "Khu phố Thanh Sơn, phường Vũ Ninh, Thành phố Bắc Ninh",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đình Mạnh",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Mạnh",
       "birthSolar": "1973-01-03",
       "birthLunar": "29/11/1972",
@@ -1973,7 +2092,8 @@
       "status": "Living",
       "id": "csv_1793419822866_113",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Lưu Thúy Nga",
@@ -1989,7 +2109,8 @@
       "status": "Living",
       "id": "csv_1793419822866_114",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Khôi",
@@ -2005,7 +2126,8 @@
       "status": "Living",
       "id": "csv_1793419822866_115",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nông Thị Huệ",
@@ -2021,7 +2143,8 @@
       "status": "Living",
       "id": "csv_1793419822866_116",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Ngọc Diệp",
@@ -2037,7 +2160,8 @@
       "status": "Living",
       "id": "csv_1793419822866_117",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "7"
     },
     {
       "name": "Nguyễn Anh Khoa",
@@ -2053,7 +2177,8 @@
       "status": "Living",
       "id": "csv_1793419822866_118",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Quang Lộc",
@@ -2069,11 +2194,12 @@
       "status": "Living",
       "id": "csv_1793419822866_119",
       "hometown": "",
-      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số nhà 122C, đường Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đình Tú",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Tú",
       "birthSolar": "1976-10-07",
       "birthLunar": "14/08/1976",
@@ -2085,7 +2211,8 @@
       "status": "Living",
       "id": "csv_1793419822866_120",
       "hometown": "",
-      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Ngô Thị Bích Hiệp",
@@ -2101,7 +2228,8 @@
       "status": "Living",
       "id": "csv_1793419822866_121",
       "hometown": "",
-      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Thị Mai Anh",
@@ -2117,7 +2245,8 @@
       "status": "Living",
       "id": "csv_1793419822866_122",
       "hometown": "",
-      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Thị Mai Huệ",
@@ -2133,11 +2262,12 @@
       "status": "Living",
       "id": "csv_1793419822866_123",
       "hometown": "",
-      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn"
+      "currentLocation": "Số 45 đường Xương Giang, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Đình Kê",
-      "relation": "Con trai (đời thứ 5)",
+      "relation": "Con trai",
       "branch": "Nguyễn Đình Kê",
       "birthSolar": "1981-12-13",
       "birthLunar": "18/11/1981",
@@ -2149,7 +2279,8 @@
       "status": "Living",
       "id": "csv_1793419822866_124",
       "hometown": "",
-      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Phùng Thị Hằng",
@@ -2165,7 +2296,8 @@
       "status": "Living",
       "id": "csv_1793419822866_125",
       "hometown": "",
-      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Khiêm",
@@ -2181,7 +2313,8 @@
       "status": "Living",
       "id": "csv_1793419822866_126",
       "hometown": "",
-      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Phùng Hưng",
@@ -2197,7 +2330,8 @@
       "status": "Living",
       "id": "csv_1793419822866_127",
       "hometown": "",
-      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     },
     {
       "name": "Nguyễn Tuệ Tâm",
@@ -2213,7 +2347,8 @@
       "status": "Living",
       "id": "csv_1793419822866_128",
       "hometown": "",
-      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn"
+      "currentLocation": "Số 06, Ngách 13, ngõ 122, Đ. Ba Đình, Thôn Na Đâu , xã Hữu Lũng ,tỉnh Lạng Sơn",
+      "generation": "6"
     }
   ],
   "cemeteries": [
