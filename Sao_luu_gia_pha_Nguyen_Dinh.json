@@ -1,7 +1,7 @@
 {
   "app": "Gia phả dòng họ Nguyễn Đình",
   "version": 3,
-  "exportedAt": "2026-11-23T08:04:09.258Z",
+  "exportedAt": "2026-11-23T09:50:46.629Z",
   "members": [
     {
       "name": "Nguyễn Đình Cung",
@@ -27,7 +27,7 @@
       "name": "Nguyễn Đình Chuẩn",
       "gender": "Nam",
       "generation": "2",
-      "relation": "Cao tổ",
+      "relation": "Tằng tổ",
       "branch": "Nguyễn Đình Cung",
       "birthSolar": "",
       "birthLunar": "",
@@ -67,7 +67,7 @@
       "name": "Nguyễn Đình Khê",
       "gender": "Nam",
       "generation": "3",
-      "relation": "Tằng tổ",
+      "relation": "Cao tổ",
       "branch": "Nguyễn Đình Chuẩn",
       "birthSolar": "",
       "birthLunar": "",
@@ -185,8 +185,6 @@
     },
     {
       "name": "Trần Kim Hòa",
-      "gender": "Nữ",
-      "generation": "5",
       "relation": "Vợ",
       "branch": "Nguyễn Đình Chính",
       "birthSolar": "1952-05-20",
@@ -195,13 +193,12 @@
       "deathSolar": "",
       "deathLunar": "",
       "deathCanChi": "",
-      "age": "75 tuổi",
+      "age": "74 tuổi",
       "status": "Living",
+      "id": "csv_1793419822865_9",
       "hometown": "",
       "currentLocation": "Số nhà 35 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
-      "burialPlace": "",
-      "notes": "",
-      "id": "csv_1793419822865_9"
+      "generation": "5"
     },
     {
       "name": "Nguyễn Đình Thắng",
@@ -352,23 +349,6 @@
       "generation": "6"
     },
     {
-      "name": "Nguyễn Thị Kim Oanh",
-      "relation": "Con gái",
-      "branch": "Nguyễn Thái Sơn",
-      "birthSolar": "1951-08-17",
-      "birthLunar": "15/07/1951",
-      "birthCanChi": "🐰 Tân Mão",
-      "deathSolar": "",
-      "deathLunar": "",
-      "deathCanChi": "",
-      "age": "75 tuổi",
-      "status": "Living",
-      "id": "csv_1793419822865_15",
-      "hometown": "",
-      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
-      "generation": "5"
-    },
-    {
       "name": "Nguyễn Thái Sơn",
       "gender": "Nam",
       "generation": "5",
@@ -387,6 +367,23 @@
       "burialPlace": "Nghĩa trang Ao Đẫu, xã Hữu Lũng, tỉnh Lạng Sơn",
       "notes": "",
       "id": "csv_1793419822865_14"
+    },
+    {
+      "name": "Nguyễn Thị Kim Oanh",
+      "relation": "Con gái",
+      "branch": "Nguyễn Thái Sơn",
+      "birthSolar": "1951-08-17",
+      "birthLunar": "15/07/1951",
+      "birthCanChi": "🐰 Tân Mão",
+      "deathSolar": "",
+      "deathLunar": "",
+      "deathCanChi": "",
+      "age": "75 tuổi",
+      "status": "Living",
+      "id": "csv_1793419822865_15",
+      "hometown": "",
+      "currentLocation": "Số nhà 82 Đường Bắc Sơn, xã Hữu Lũng, tỉnh Lạng Sơn",
+      "generation": "5"
     },
     {
       "name": "Nguyễn Ngọc Tùng",
@@ -825,7 +822,7 @@
     {
       "name": "Nguyễn Hải Đăng",
       "gender": "Nam",
-      "generation": "Đời thứ 7",
+      "generation": "7",
       "relation": "Cháu trai",
       "branch": "Nguyễn Đình Long",
       "birthSolar": "2026-11-01",
