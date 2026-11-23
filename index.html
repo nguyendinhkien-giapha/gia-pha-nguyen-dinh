@@ -2394,49 +2394,46 @@ document.getElementById('feClearFilters')?.addEventListener('click',()=>{documen
  });
 })();
 
-// Bộ lọc mobile: dùng thuộc tính hidden để đóng/mở chắc chắn trên cả click và touch.
-(function setupMobileFilterToggles(){
-  const isMobile=()=>window.matchMedia('(max-width: 768px)').matches;
+// V32: điều khiển ẩn/hiện bộ lọc và quản lý bằng hidden thật sự.
+(function setupMobileFilterTogglesV32(){
+  const mobile=()=>window.matchMedia('(max-width: 768px)').matches;
   function bind(buttonId,contentId,closedLabel,openLabel){
     const btn=document.getElementById(buttonId),content=document.getElementById(contentId);
-    if(!btn||!content)return;
-    if(isMobile()) content.hidden=true;
+    if(!btn||!content||btn.dataset.v32Bound==='1')return;
+    btn.dataset.v32Bound='1';
     btn.setAttribute('aria-controls',contentId);
-    btn.setAttribute('aria-expanded','false');
-    btn.textContent=closedLabel;
-    btn.addEventListener('click',function(event){
-      event.preventDefault();
-      const open=content.hidden;
+    function setOpen(open){
       content.hidden=!open;
+      content.classList.toggle('mobile-filter-collapsed',!open);
       btn.setAttribute('aria-expanded',String(open));
       btn.textContent=open?openLabel:closedLabel;
-    },{passive:false});
+    }
+    setOpen(!mobile());
+    btn.addEventListener('click',function(ev){ev.preventDefault();setOpen(content.hidden);},{passive:false});
   }
   bind('mobileMemberFilterBtn','memberFilterControls','⚙️ Lọc danh sách','✕ Đóng bộ lọc');
   bind('mobileMapFilterBtn','mapFilterControls','⚙️ Lọc danh sách','✕ Đóng bộ lọc');
 })();
 
-// Giao diện điện thoại: gom chức năng quản lý để ưu tiên xem danh sách.
-(function setupMobileManagementControls(){
+// V32: nút Quản lý dữ liệu đóng/mở toàn bộ nhóm thao tác, không ảnh hưởng ô tìm kiếm.
+(function setupMobileManagementControlsV32(){
   const toolbar=document.querySelector('.toolbar');
-  const dataToggle=document.getElementById('mobileDataManageBtn');
-  const actionIds=['addBtn','editBtn','deleteBtn','csvBtn','importBtn','jsonBtn','restoreBtn','printBranchBtn','exportBookBtn'];
-  actionIds.forEach(id=>{const el=document.getElementById(id);if(el)el.dataset.mobileManagement='true'});
-  if(dataToggle&&toolbar){dataToggle.addEventListener('click',()=>{
-    const open=toolbar.classList.toggle('mobile-management-open');
-    dataToggle.setAttribute('aria-expanded',String(open));
-    dataToggle.textContent=open?'✕ Đóng quản lý dữ liệu':'⚙️ Quản lý dữ liệu';
-  });}
-  const cemToggle=document.getElementById('mobileCemeteryManageBtn');
-  const cemForm=document.getElementById('cemeteryForm');
-  if(cemToggle&&cemForm){
-    cemForm.classList.add('mobile-cemetery-collapsed');
-    cemToggle.addEventListener('click',()=>{
-      const open=cemForm.classList.toggle('mobile-cemetery-collapsed')===false;
-      cemToggle.setAttribute('aria-expanded',String(open));
-      cemToggle.textContent=open?'✕ Đóng quản lý mộ phần':'⚙️ Quản lý mộ phần';
-    });
+  const toggle=document.getElementById('mobileDataManageBtn');
+  const ids=['toggleMemberActions','addBtn','editBtn','deleteBtn','csvBtn','importBtn','jsonBtn','restoreBtn','printBranchBtn','exportBookBtn'];
+  if(!toolbar||!toggle||toggle.dataset.v32Bound==='1')return;
+  toggle.dataset.v32Bound='1';
+  const controls=ids.map(id=>document.getElementById(id)).filter(Boolean);
+  controls.forEach(el=>el.dataset.mobileManagement='true');
+  const mobile=()=>window.matchMedia('(max-width: 768px)').matches;
+  function setOpen(open){
+    toolbar.classList.toggle('mobile-management-open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.textContent=open?'✕ Đóng quản lý dữ liệu':'⚙️ Quản lý dữ liệu';
+    controls.forEach(el=>{el.hidden=mobile()&&!open;});
   }
+  setOpen(!mobile());
+  toggle.addEventListener('click',function(ev){ev.preventDefault();setOpen(toggle.getAttribute('aria-expanded')!=='true');},{passive:false});
+  window.addEventListener('resize',()=>setOpen(!mobile()||toggle.getAttribute('aria-expanded')==='true'));
 })();
 
 // Mở phần mềm mặc định tại Trang chủ, không làm thay đổi dữ liệu đã lưu.
@@ -2546,5 +2543,23 @@ function renderMusic(){const list=document.getElementById('musicList');if(!list)
   setTimeout(scheduleMeasure,0);
 })();
 </script>
+
+
+<style id="v32-mobile-collapse-and-data-visibility">
+@media screen and (max-width:768px){
+  #memberFilterControls[hidden], #mapFilterControls[hidden]{display:none!important;visibility:hidden!important;height:0!important;min-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important}
+  .panel:has(> #memberFilterControls[hidden]) > h3,
+  .panel:has(> #mapFilterControls[hidden]) > h3{display:none!important}
+  .toolbar .btn[data-mobile-management="true"][hidden]{display:none!important;visibility:hidden!important}
+  .toolbar:not(.mobile-management-open) .btn[data-mobile-management="true"]{display:none!important}
+  .toolbar.mobile-management-open .btn[data-mobile-management="true"]:not([hidden]){display:inline-flex!important;visibility:visible!important}
+  .toolbar #mobileDataManageBtn{display:inline-flex!important;visibility:visible!important}
+  .layout, .layout > main, .layout > .content, #memberTable, #memberList, .table-wrap{visibility:visible!important;}
+}
+@media screen and (min-width:769px){
+  #memberFilterControls, #mapFilterControls{visibility:visible!important}
+  .toolbar .btn[data-mobile-management="true"]{display:inline-flex!important;visibility:visible!important}
+}
+</style>
 
 </body></html>
